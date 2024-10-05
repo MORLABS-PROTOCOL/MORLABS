@@ -12,23 +12,23 @@ app.get("/", (req, res) => {
 
 app.post("/waitlist", (req, res) => {
 
-    let { email } = req.body
+    let { email, username } = req.body
     if (!email) {
         res.status(400).send({ message: "Email is required" })
         return
     }
     try {
         addDoc(collection(db, "user-emails"), {
-            email
+            email, username
         })
         res.send({
             message: "Done !",
-            email, ok: true
+            email, username, ok: true
         })
     }
     catch (e) {
         res.status(400).send({
-            message: `Error saving email: ${e}`,
+            message: `Error saving user: ${e}`,
             ok: false
         })
     }
