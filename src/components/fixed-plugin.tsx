@@ -22,7 +22,7 @@ const FixedPlugin = () => {
           alt="Morlabs"
           src="/favicon.jpg"
         />{" "}
-        Morlabs-Chain
+        Morlabs-Protocols
       </Button>
     </a>
   );

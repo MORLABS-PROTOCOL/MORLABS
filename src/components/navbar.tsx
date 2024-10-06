@@ -16,26 +16,26 @@ import Link from 'next/link';
 // Define navItems here, or import them if they are defined in another file.
 
 const navItems = {
-  APIs: [
-    { name: "NFT API", description: "NFT data access", href: '/docs' },
-    { name: "Token API", description: "Token info", href: '/docs' },
-    { name: "Transfers API", description: "Asset transfers", href: '/docs' },
-    { name: "Gas Manager API", description: "Gas optimization", href: '/docs' },
-    { name: "Smart Websockets", description: "Real-time events", href: '/docs' },
-    { name: "Supernode", description: "The web3 engine", href: '/docs' },
-  ],
-  BlockChains: [
-    { name: "Ethereum", description: "Smart contracts", href: '/docs' },
-    { name: "Solana", description: "Scalable blockchain", href: '/docs' },
-  ],
-  SDKs: [
-    { name: "Javascript SDK", description: "Web3 with JS", href: '/docs' },
-    { name: "Python SDK", description: "Web3 with Python", href: '/docs' },
-  ],
-  Tools: [
-    { name: "Sandbox", description: "Test environment", href: '/doc' },
-    { name: "Create Web3 Dapp", description: "Build Dapps", href: '/docs' },
-  ],
+  // APIs: [
+  //   { name: "NFT API", description: "NFT data access", href: '/docs' },
+  //   { name: "Token API", description: "Token info", href: '/docs' },
+  //   { name: "Transfers API", description: "Asset transfers", href: '/docs' },
+  //   { name: "Gas Manager API", description: "Gas optimization", href: '/docs' },
+  //   { name: "Smart Websockets", description: "Real-time events", href: '/docs' },
+  //   { name: "Supernode", description: "The web3 engine", href: '/docs' },
+  // ],
+  // BlockChains: [
+  //   { name: "Ethereum", description: "Smart contracts", href: '/docs' },
+  //   { name: "Solana", description: "Scalable blockchain", href: '/docs' },
+  // ],
+  // SDKs: [
+  //   { name: "Javascript SDK", description: "Web3 with JS", href: '/docs' },
+  //   { name: "Python SDK", description: "Web3 with Python", href: '/docs' },
+  // ],
+  // Tools: [
+  //   { name: "Sandbox", description: "Test environment", href: '/doc' },
+  //   { name: "Create Web3 Dapp", description: "Build Dapps", href: '/docs' },
+  // ],
   publish: [
     { name: "Submit API", description: "Publish", href: '/signup-form' },
     { name: "API Guidelines", description: "Get Guided", href: '/signup-form' },
@@ -50,12 +50,12 @@ const navItems = {
     { name: "Contact", description: "Get in Touch", href: '/guide' }, 
     { name: "Careers", description: "Join Our Team", href: '/guide' }, 
   ],
-  docs: [
-    { name: "Developer Docs", description: "Explore Guides", href: '/docs'}, 
-    { name: "API Doc Templates", description: "Use Templates", href: '/docs' }, 
-    { name: "Solana Integration", description: "Integrate Easily", href: '/docs' }, 
-    { name: "Sandbox/Test Environment", description: "Test Safely", href: '/docs' }, 
-  ],
+  // docs: [
+  //   { name: "Developer Docs", description: "Explore Guides", href: '/docs'}, 
+  //   { name: "API Doc Templates", description: "Use Templates", href: '/docs' }, 
+  //   { name: "Solana Integration", description: "Integrate Easily", href: '/docs' }, 
+  //   { name: "Sandbox/Test Environment", description: "Test Safely", href: '/docs' }, 
+  // ],
 
      
 };
@@ -113,19 +113,7 @@ const Navbar = () => {
     );
   }, []);
 
-  // React.useEffect(() => {
-  //   function handleScroll() {
-  //     if (window.scrollY > 0) {
-  //       setIsScrolling(true);
-  //     } else {
-  //       setIsScrolling(false);
-  //     }
-  //   }
-
-  //   window.addEventListener("scroll", handleScroll);
-
-  //   return () => window.removeEventListener("scroll", handleScroll);
-  // }, []);
+  
 
   return (
     <MTNavbar
@@ -153,7 +141,7 @@ const Navbar = () => {
           onPointerEnterCapture={() => {}}
           onPointerLeaveCapture={() => {}}
         >
-          <Link href="/for-dev" passHref>
+          <Link href="/" passHref>
           <span className="text-4xl mr-2" style={{ color: "#00FF99" }}>
             m
           </span>{" "}
@@ -179,12 +167,12 @@ const Navbar = () => {
                 <ChevronDownIcon className="w-5 h-5 ml-1" />
               </button>
               </Link>
-              {activeDropdown === "developers" && (
+              {/* {activeDropdown === "developers" && (
                 
                 <div className="absolute left-0 mt-2 w-[80%] sm:w-[800px] md:w-[900px] lg:w-[1000px] bg-black border border-green-500 rounded-lg shadow-lg z-10">
-                  <div className="p-4 grid grid-cols-4 gap-4">
+                  <div className="p-4 grid grid-cols-4 gap-4"> */}
                     {/* API Section */}
-                    <div>
+                    {/* <div>
                       <h4 className="font-semibold text-sm text-white">APIs</h4>
                       {navItems.APIs.map((item) => (
                         <MenuItem key={item.name} className="flex items-center justify-between text-white" placeholder=""
@@ -194,9 +182,9 @@ const Navbar = () => {
                           <span><a href={item.href} className="text-xs text-gray-500">{item.description}</a></span>
                         </MenuItem>
                       ))}
-                    </div>
+                    </div> */}
                     {/* Chains Section */}
-                    <div>
+                    {/* <div>
                       <h4 className="font-semibold text-sm text-white">Chains</h4>
                       {navItems.BlockChains.map((item) => (
                         <MenuItem key={item.name} className="flex items-center justify-between text-white" placeholder=""
@@ -206,9 +194,9 @@ const Navbar = () => {
                           <span><a href={item.href} className="text-xs text-gray-500">{item.description}</a></span>
                         </MenuItem>
                       ))}
-                    </div>
+                    </div> */}
                     {/* SDKs Section */}
-                    <div>
+                    {/* <div>
                       <h4 className="font-semibold text-sm text-white">SDKs</h4>
                       {navItems.SDKs.map((item) => (
                         <MenuItem key={item.name} className="flex items-center justify-between text-white" placeholder=""
@@ -218,9 +206,9 @@ const Navbar = () => {
                           <span><a href={item.href} className="text-xs text-gray-500">{item.description}</a></span>
                         </MenuItem>
                       ))}
-                    </div>
+                    </div> */}
                     {/* Tools Section */}
-                    <div>
+                    {/* <div>
                       <h4 className="font-semibold text-sm text-white">Tools</h4>
                       {navItems.Tools.map((item) => (
                         <MenuItem key={item.name} className="flex items-center justify-between text-white" placeholder=""
@@ -230,10 +218,10 @@ const Navbar = () => {
                           <span><a href={item.href} className="text-xs text-gray-500">{item.description}</a></span>
                         </MenuItem>
                       ))}
-                    </div>
-                  </div>
+                    </div> */}
+                  {/* </div>
                 </div>
-              )}
+              )} */}
             </li>
             {/* Publish Your API Dropdown */}
 
@@ -242,7 +230,7 @@ const Navbar = () => {
               onMouseOver={() => handleMouseOver("publish")}
               onMouseLeave={handleMouseLeave}
             >
-              <Link href="/signup-form" passHref>
+              <Link href="/publish-api" passHref>
               <button
                 className="font-medium flex items-center"
                 // style={{ color: isScrolling ? "gray" : "white" }}
@@ -251,10 +239,10 @@ const Navbar = () => {
                 <ChevronDownIcon className="w-5 h-5 ml-1" />
               </button>
               </Link>
-              {activeDropdown === "publish" && (
-                <div className="absolute left-0 mt-2 w-64 bg-black border border-green-500 rounded-lg shadow-lg z-10">
+              {/* {activeDropdown === "publish" && (
+                <div className="absolute left-0 mt-2 w-64 bg-black border border-green-500 rounded-lg shadow-lg z-10"> */}
                   {/* Publish Section */}
-                  <div className="p-4 space-y-2">
+                  {/* <div className="p-4 space-y-2">
                     
                     <h4 className="font-semibold text-sm  text-white">
                       Add
@@ -267,10 +255,10 @@ const Navbar = () => {
                         <span><a href={item.href} className="text-xs text-gray-500">{item.description}</a></span>
                       </MenuItem>
                     ))}
-                  </div>
-                  
+                  </div> */}
+{/*                   
                 </div>
-              )}
+              )} */}
             </li>
             {/* Community Dropdown */}
 
@@ -288,10 +276,10 @@ const Navbar = () => {
                 <ChevronDownIcon className="w-5 h-5 ml-1" />
               </button>
               </Link>
-              {activeDropdown === "community" && (
-                <div className="absolute left-0 mt-2 w-64 bg-black border border-green-500 rounded-lg shadow-lg z-10">
+              {/* {activeDropdown === "community" && (
+                <div className="absolute left-0 mt-2 w-64 bg-black border border-green-500 rounded-lg shadow-lg z-10"> */}
                   {/* community Section */}
-                  <div className="p-4 space-y-2">
+                  {/* <div className="p-4 space-y-2">
                     
                     <h4 className="font-semibold text-sm  text-white">
                       Forum
@@ -304,10 +292,10 @@ const Navbar = () => {
                         <span><a href={item.href} className="text-xs text-gray-500">{item.description}</a></span>
                       </MenuItem>
                     ))}
-                  </div>
+                  </div> */}
                   
-                </div>
-              )}
+                {/* </div>
+              )} */}
             </li>
             {/* Company Dropdown */}
 
@@ -316,7 +304,7 @@ const Navbar = () => {
               onMouseOver={() => handleMouseOver("company")}
               onMouseLeave={handleMouseLeave}
             >
-              <Link href="/guide" passHref>
+              <Link href="/" passHref>
               <button
                 className="font-medium flex items-center"
                 // style={{ color: isScrolling ? "gray" : "white" }}
@@ -325,10 +313,10 @@ const Navbar = () => {
                 <ChevronDownIcon className="w-5 h-5 ml-1" />
               </button>
               </Link>
-              {activeDropdown === "company" && (
-                <div className="absolute left-0 mt-2 w-64 bg-black border border-green-500 rounded-lg shadow-lg z-10">
+              {/* {activeDropdown === "company" && (
+                <div className="absolute left-0 mt-2 w-64 bg-black border border-green-500 rounded-lg shadow-lg z-10"> */}
                   {/* company Section */}
-                  <div className="p-4 space-y-2">
+                  {/* <div className="p-4 space-y-2">
                     
                     <h4 className="font-semibold text-sm  text-white">
                       Morlabs
@@ -341,10 +329,10 @@ const Navbar = () => {
                         <span><a href={item.href} className="text-xs text-gray-500">{item.description}</a></span>
                       </MenuItem>
                     ))}
-                  </div>
+                  </div> */}
                   
-                </div>
-              )}
+                {/* </div>
+              )} */}
             </li>
             {/* Docs Dropdown */}
 
@@ -362,10 +350,10 @@ const Navbar = () => {
                 <ChevronDownIcon className="w-5 h-5 ml-1" />
               </button>
               </Link>
-              {activeDropdown === "docs" && (
-                <div className="absolute left-0 mt-2 w-80 bg-black border border-green-500 rounded-lg shadow-lg z-10">
+              {/* {activeDropdown === "docs" && (
+                <div className="absolute left-0 mt-2 w-80 bg-black border border-green-500 rounded-lg shadow-lg z-10"> */}
                   {/* Docs Section */}
-                  <div className="p-4 space-y-2">
+                  {/* <div className="p-4 space-y-2">
                     
                     <h4 className="font-semibold text-sm  text-white">
                       Guides
@@ -378,13 +366,14 @@ const Navbar = () => {
                         <span><a href={item.href} className="text-xs text-gray-500">{item.description}</a></span>
                       </MenuItem>
                     ))}
-                  </div>
+                  </div> */}
                   
-                </div>
-              )}
+                {/* </div>
+              )} */}
             </li>
         </ul>
         <div className="hidden gap-2 lg:flex lg:items-center">
+          <a href="https://twitter.com/morlabs_">
           <IconButton
             variant="text"
             color="white"
@@ -393,8 +382,9 @@ const Navbar = () => {
             onPointerEnterCapture={() => {}}
             onPointerLeaveCapture={() => {}}
           >
-            <i className="fa-brands fa-twitter text-base" />
+           <i className="fa-brands fa-twitter text-base" /> 
           </IconButton>
+          </a>
           <IconButton
             variant="text"
             color="white"
@@ -452,6 +442,7 @@ const Navbar = () => {
               onMouseOver={() => handleMouseOver("developers")}
               onMouseLeave={handleMouseLeave}
             >
+              <Link href="/for-dev" passHref>
               <button
                 className="font-medium flex items-center"
                 // style={ color: "white"}
@@ -459,10 +450,11 @@ const Navbar = () => {
                 For Developers
                 <ChevronDownIcon className="w-5 h-5 ml-1" />
               </button>
-              {activeDropdown === "developers" && (
-                <div className="absolute left-0 mt-2 w-64 bg-black border border-green-500 rounded-lg shadow-lg z-10">
+              </Link>
+              {/* {activeDropdown === "developers" && (
+                <div className="absolute left-0 mt-2 w-64 bg-black border border-green-500 rounded-lg shadow-lg z-10"> */}
                   {/* API Section */}
-                  <div className="p-4 space-y-2">
+                  {/* <div className="p-4 space-y-2">
                     <h4 className="font-semibold text-sm text-white">APIs</h4>
                     {navItems.APIs.map((item) => (
                       <MenuItem key={item.name} className="flex items-center justify-between text-white" placeholder=""
@@ -472,9 +464,9 @@ const Navbar = () => {
                         <span className="text-xs text-gray-500">{item.description}</span>
                       </MenuItem>
                     ))}
-                  </div>
+                  </div> */}
                   {/* Chains Section */}
-                  <div className="p-4 space-y-2">
+                  {/* <div className="p-4 space-y-2">
                     <h4 className="font-semibold text-sm text-white">Chains</h4>
                     {navItems.BlockChains.map((item) => (
                       <MenuItem key={item.name} className="flex items-center justify-between text-white" placeholder=""
@@ -484,9 +476,9 @@ const Navbar = () => {
                         <span className="text-xs text-gray-500">{item.description}</span>
                       </MenuItem>
                     ))}
-                  </div>
-                </div>
-              )}
+                  </div> */}
+                {/* </div>
+              )} */}
             </li>
             {/* Publish Your API Dropdown */}
 
@@ -495,6 +487,7 @@ const Navbar = () => {
               onMouseOver={() => handleMouseOver("publish")}
               onMouseLeave={handleMouseLeave}
             >
+              <Link href="/publish-api" passHref>
               <button
                 className="font-medium flex items-center"
                 // style={{ color: isScrolling ? "gray" : "white" }}
@@ -502,10 +495,11 @@ const Navbar = () => {
                 Publish Your API
                 <ChevronDownIcon className="w-5 h-5 ml-1" />
               </button>
-              {activeDropdown === "publish" && (
-                <div className="absolute left-0 mt-2 w-64 bg-black border border-green-500 rounded-lg shadow-lg z-10">
+              </Link>
+              {/* {activeDropdown === "publish" && (
+                <div className="absolute left-0 mt-2 w-64 bg-black border border-green-500 rounded-lg shadow-lg z-10"> */}
                   {/* Publish Section */}
-                  <div className="p-4 space-y-2">
+                  {/* <div className="p-4 space-y-2">
                     
                     <h4 className="font-semibold text-sm text-white">
                       Add
@@ -518,10 +512,10 @@ const Navbar = () => {
                         <span className="text-xs text-gray-500">{item.description}</span>
                       </MenuItem>
                     ))}
-                  </div>
+                  </div> */}
                   
-                </div>
-              )}
+                {/* </div>
+              )} */}
             </li>
             {/* Community Dropdown */}
 
@@ -530,6 +524,7 @@ const Navbar = () => {
               onMouseOver={() => handleMouseOver("community")}
               onMouseLeave={handleMouseLeave}
             >
+              <Link href="/signup-form" passHref>
               <button
                 className="font-medium flex items-center"
                 // style={{ color: isScrolling ? "gray" : "white" }}
@@ -537,10 +532,11 @@ const Navbar = () => {
                 Community
                 <ChevronDownIcon className="w-5 h-5 ml-1" />
               </button>
-              {activeDropdown === "community" && (
-                <div className="absolute left-0 mt-2 w-64 bg-black border border-green-500 rounded-lg shadow-lg z-10">
+              </Link>
+              {/* {activeDropdown === "community" && (
+                <div className="absolute left-0 mt-2 w-64 bg-black border border-green-500 rounded-lg shadow-lg z-10"> */}
                   {/* community Section */}
-                  <div className="p-4 space-y-2">
+                  {/* <div className="p-4 space-y-2">
                     
                     <h4 className="font-semibold text-sm text-white">
                       Forum
@@ -553,10 +549,10 @@ const Navbar = () => {
                         <span className="text-xs text-gray-500">{item.description}</span>
                       </MenuItem>
                     ))}
-                  </div>
+                  </div> */}
                   
-                </div>
-              )}
+                {/* </div>
+              )} */}
             </li>
             {/* Company Dropdown */}
 
@@ -565,6 +561,7 @@ const Navbar = () => {
               onMouseOver={() => handleMouseOver("company")}
               onMouseLeave={handleMouseLeave}
             >
+              <Link href="/" passHref>
               <button
                 className="font-medium flex items-center"
                 // style={{ color: isScrolling ? "gray" : "white" }}
@@ -572,10 +569,11 @@ const Navbar = () => {
                 Company
                 <ChevronDownIcon className="w-5 h-5 ml-1" />
               </button>
-              {activeDropdown === "company" && (
-                <div className="absolute left-0 mt-2 w-64 bg-black border border-green-500 rounded-lg shadow-lg z-10">
+              </Link>
+              {/* {activeDropdown === "company" && (
+                <div className="absolute left-0 mt-2 w-64 bg-black border border-green-500 rounded-lg shadow-lg z-10"> */}
                   {/* company Section */}
-                  <div className="p-4 space-y-2">
+                  {/* <div className="p-4 space-y-2">
                     
                     <h4 className="font-semibold text-sm text-white">
                       Morlabs
@@ -588,10 +586,10 @@ const Navbar = () => {
                         <span className="text-xs text-gray-500">{item.description}</span>
                       </MenuItem>
                     ))}
-                  </div>
+                  </div> */}
                   
-                </div>
-              )}
+                {/* </div>
+              )} */}
             </li>
             {/* Docs Dropdown */}
 
@@ -600,6 +598,7 @@ const Navbar = () => {
               onMouseOver={() => handleMouseOver("docs")}
               onMouseLeave={handleMouseLeave}
             >
+              <Link href="/docs" passHref>
               <button
                 className="font-medium flex items-center"
                 // style={{ color: "white" }}
@@ -607,10 +606,11 @@ const Navbar = () => {
                 Docs
                 <ChevronDownIcon className="w-5 h-5 ml-1" />
               </button>
-              {activeDropdown === "docs" && (
-                <div className="absolute left-0 mt-2 w-64 bg-black border border-green-500 rounded-lg shadow-lg z-10">
+              </Link>
+              {/* {activeDropdown === "docs" && (
+                <div className="absolute left-0 mt-2 w-64 bg-black border border-green-500 rounded-lg shadow-lg z-10"> */}
                   {/* Docs Section */}
-                  <div className="p-4 space-y-2">
+                  {/* <div className="p-4 space-y-2">
                     
                     <h4 className="font-semibold text-sm text-white">
                       Guides
@@ -623,16 +623,18 @@ const Navbar = () => {
                         <span className="text-xs text-gray-500">{item.description}</span>
                       </MenuItem>
                     ))}
-                  </div>
+                  </div> */}
                   
-                </div>
-              )}
+                {/* </div>
+              )} */}
             </li> 
           </ul>
           <div className="mt-4 flex items-center gap-2">
+            <a href="https://twitter.com/morlabs_">
             <IconButton variant="text" color="gray" size="sm" placeholder="" onPointerEnterCapture={() => {}} onPointerLeaveCapture={() => {}}>
               <i className="fa-brands fa-twitter text-base" />
             </IconButton>
+            </a>
             <IconButton variant="text" color="gray" size="sm" placeholder="" onPointerEnterCapture={() => {}} onPointerLeaveCapture={() => {}}>
               <i className="fa-brands fa-facebook text-base" />
             </IconButton>

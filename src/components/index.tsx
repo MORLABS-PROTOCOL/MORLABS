@@ -5,7 +5,7 @@ export { default as Layout } from "./rootlayout";
 export { default as Page } from "../pages";
 export { default as VideoIntro } from "../pages/get-started";
 export { default as Feature } from "../pages/feature";
-export { default as Faqs } from "../pages/faqs";
+// export { default as Faqs } from "../pages/faqs";
 export { default as Testimonials } from "../pages/testimonials";
 export { default as FixedPlugin } from './fixed-plugin';
 

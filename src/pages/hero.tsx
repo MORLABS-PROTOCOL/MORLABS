@@ -1,46 +1,115 @@
 "use client";
 
-import Image from "next/image";
+// import Image from "next/image";
+import Link from "next/link";
 import { Button, Typography } from "@material-tailwind/react";
 import { useState } from 'react';
 import { FaEthereum, FaBitcoin, FaLinkedin, FaGithub } from 'react-icons/fa'; // Placeholder icons
 import { SiSolana, SiPolkadot, SiChainlink } from 'react-icons/si'; // Web3 specific icons
 
-export const JoinWaitlist = () => {
-  const [email, setEmail] = useState('');
 
-  const handleInputChange = (e: React.ChangeEvent<HTMLInputElement>) => {
-    setEmail(e.target.value);
-  };
 
-  const handleSubmit = (e: React.FormEvent<HTMLFormElement>) => {
-    e.preventDefault();
-    // Add your submission logic here
-    console.log('Email submitted:', email);
-  };
 
-  return (
-    <div className="flex flex-col items-center">
-      <form onSubmit={handleSubmit} className="flex items-center">
-        <input
-          type="email"
-          value={email}
-          onChange={handleInputChange}
-          placeholder="Email Address"
-          className="mb-2 p-2 border border-gray-100 rounded mr-2 text-black"
-          required
-        />
-        <button
-          type="submit"
-          className="p-2 border-t border-l border-r border-white bg-gree-500 text-white rounded hover:bg-green-900"
-        >
-          {/* className="px-6 py-3 bg-green-800 rounded-full hover:bg-green-600 transition duration-300 text-white"style={{ backgroundColor: "#00FF99" }} */}
-          Join Waitlist
-        </button>
-      </form>
-    </div>
-  );
-};
+// export const JoinWaitlist = () => {
+//   const [email, setEmail] = useState('');
+//   const [isSubmitting, setIsSubmitting] = useState(false);
+//   const [message, setMessage] = useState('');
+
+//   const handleInputChange = (e: React.ChangeEvent<HTMLInputElement>) => {
+//     setEmail(e.target.value);
+//   };
+
+//   const handleSubmit = async (e: React.FormEvent<HTMLFormElement>) => {
+//     e.preventDefault();
+
+//     setIsSubmitting(true); // Disable the button while submitting
+//     setMessage(''); // Reset the message
+
+//     try {
+//       const response = await fetch('https://morlabsprotocol.vercel.app/waitlist', {
+//         method: 'POST',
+//         headers: {
+//           'Content-Type': 'application/json',
+//         },
+//         body: JSON.stringify({ email }),
+//       });
+
+//       if (response.ok) {
+//         setMessage('Successfully joined the waitlist!');
+//         setEmail(''); // Reset the email input after successful submission
+//       } else {
+//         setMessage('Failed to join the waitlist. Please try again.');
+//       }
+//     } catch (error) {
+//       setMessage('An error occurred. Please try again.');
+//     }
+
+//     setIsSubmitting(false); // Re-enable the button after submitting
+//   };
+
+//   return (
+//     <div className="flex flex-col items-center">
+//       <form onSubmit={handleSubmit} className="flex items-center">
+//         <input
+//           type="email"
+//           value={email}
+//           onChange={handleInputChange}
+//           placeholder="Email Address"
+//           className="mb-2 p-2 border border-gray-100 rounded mr-2 text-black"
+//           required
+//         />
+//         <button
+//           type="submit"
+//           className="p-2 border-t border-l border-r border-white bg-gree-500 text-white rounded hover:bg-green-900"
+//           disabled={isSubmitting}
+//         >
+//           {isSubmitting ? 'Joining...' : 'Join Waitlist'}
+//         </button>
+//       </form>
+//       {message && <p className="mt-4 text-white">{message}</p>}
+//     </div>
+//   );
+// };
+
+
+
+
+
+// export const JoinWaitlist = () => {
+//   const [email, setEmail] = useState('');
+
+//   const handleInputChange = (e: React.ChangeEvent<HTMLInputElement>) => {
+//     setEmail(e.target.value);
+//   };
+
+//   const handleSubmit = (e: React.FormEvent<HTMLFormElement>) => {
+//     e.preventDefault();
+//     // Add your submission logic here
+//     console.log('Email submitted:', email);
+//   };
+
+//   return (
+//     <div className="flex flex-col items-center">
+//       <form onSubmit={handleSubmit} className="flex items-center">
+//         <input
+//           type="email"
+//           value={email}
+//           onChange={handleInputChange}
+//           placeholder="Email Address"
+//           className="mb-2 p-2 border border-gray-100 rounded mr-2 text-black"
+//           required
+//         />
+//         <button
+//           type="submit"
+//           className="p-2 border-t border-l border-r border-white bg-gree-500 text-white rounded hover:bg-green-900"
+//         >
+//           {/* className="px-6 py-3 bg-green-800 rounded-full hover:bg-green-600 transition duration-300 text-white"style={{ backgroundColor: "#00FF99" }} */}
+//           Join Waitlist
+//         </button>
+//       </form>
+//     </div>
+//   );
+// };
 
 
 export const TrustedCompanies = () => {
@@ -98,10 +167,17 @@ function Hero() {
             </Typography>
         
             <div className="">
-              <JoinWaitlist/>
-
+              {/* <JoinWaitlist/> */}
+              <Link href="/signup-form" passHref>
+            <button
+            type="submit"
+            className="p-2 border-t border-l border-r border-white bg-gree-500 text-white rounded hover:bg-green-900"
+          >
+            {/* className="px-6 py-3 bg-green-800 rounded-full hover:bg-green-600 transition duration-300 text-white"style={{ backgroundColor: "#00FF99" }} */}
+            JoinWaitlist
+          </button>
+          </Link>
             
-             
             </div>
                <p className="mt-6 text-sm">Trusted by 100+ B2B companies</p>
                <TrustedCompanies />

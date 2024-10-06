@@ -9,7 +9,7 @@ import { default as Hero } from "./hero";
 import VideoIntro from "./get-started";
 import Feature from "./feature";
 import Testimonials from "./testimonials";
-import Faqs from "./faqs";
+// import Faqs from "./faqs";
 
 // export default function Campaign() {
   export default function Home() {
@@ -24,7 +24,6 @@ import Faqs from "./faqs";
         <APISection />
         <VideoIntro />
         <Testimonials />
-        {/* <Faqs /> */}
         <Footer />
         <FixedPlugin />
       </div>

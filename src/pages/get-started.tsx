@@ -5,7 +5,8 @@ import Image from "next/image";
 import { Typography, Card, CardBody } from "@material-tailwind/react";
 import { IconButton } from "@material-tailwind/react";
 import { PlayIcon } from "@heroicons/react/24/outline";
-import { JoinWaitlist } from './hero';
+// import { JoinWaitlist } from './hero';
+import Link from "next/link";
 
 
 
@@ -34,7 +35,17 @@ export function VideoIntro() {
               Join our developer community and start exploring our  API directory and SDK library right away. Easily publish  your own APIs and connect with other developers..
               </Typography>
               <div>
-                <JoinWaitlist/>
+                <Link href="/signup-form" passHref>
+                <button
+                 type="submit"
+                   className="p-2 border-t border-l border-r border-white bg-gree-500 text-white rounded hover:bg-green-900"
+                >
+            {/* className="px-6 py-3 bg-green-800 rounded-full hover:bg-green-600 transition duration-300 text-white"style={{ backgroundColor: "#00FF99" }} */}
+                   JoinWaitlist
+                </button>
+                </Link>
+
+                {/* <JoinWaitlist/> */}
               </div>
 
           </div>

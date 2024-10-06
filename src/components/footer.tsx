@@ -67,9 +67,11 @@ const Footer = () => {
               
             {/* Right Side - Social Icons */}
             <div className="flex space-x-4 items-center">
+              <a href="https://twitter.com/morlabs_">
               <IconButton variant="text" color="white" placeholder="" onPointerEnterCapture={() => {}} onPointerLeaveCapture={() => {}}>
                 <i className="fa-brands fa-twitter text-2xl not-italic opacity-75"></i>
               </IconButton>
+              </a>
               <IconButton variant="text" color="white" placeholder="" onPointerEnterCapture={() => {}} onPointerLeaveCapture={() => {}}>
                 <i className="fa-brands fa-linkedin text-2xl not-italic opacity-75"></i>
               </IconButton>
