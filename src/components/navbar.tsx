@@ -15,50 +15,50 @@ import Link from 'next/link';
 
 // Define navItems here, or import them if they are defined in another file.
 
-const navItems = {
-  // APIs: [
-  //   { name: "NFT API", description: "NFT data access", href: '/docs' },
-  //   { name: "Token API", description: "Token info", href: '/docs' },
-  //   { name: "Transfers API", description: "Asset transfers", href: '/docs' },
-  //   { name: "Gas Manager API", description: "Gas optimization", href: '/docs' },
-  //   { name: "Smart Websockets", description: "Real-time events", href: '/docs' },
-  //   { name: "Supernode", description: "The web3 engine", href: '/docs' },
-  // ],
-  // BlockChains: [
-  //   { name: "Ethereum", description: "Smart contracts", href: '/docs' },
-  //   { name: "Solana", description: "Scalable blockchain", href: '/docs' },
-  // ],
-  // SDKs: [
-  //   { name: "Javascript SDK", description: "Web3 with JS", href: '/docs' },
-  //   { name: "Python SDK", description: "Web3 with Python", href: '/docs' },
-  // ],
-  // Tools: [
-  //   { name: "Sandbox", description: "Test environment", href: '/doc' },
-  //   { name: "Create Web3 Dapp", description: "Build Dapps", href: '/docs' },
-  // ],
-  publish: [
-    { name: "Submit API", description: "Publish", href: '/signup-form' },
-    { name: "API Guidelines", description: "Get Guided", href: '/signup-form' },
-  ],
-  forum: [
-    { name: "DAO Voting", description: "Participate", href: '/signup-form' }, 
-    { name: "Discussion Forum", description: "Engage", href: '/sign-form' }, 
-    { name: "Contribute", description: "Join Us", href: '/sign-form' }, 
-  ],
-  morlabs: [
-    { name: "About", description: "Learn More", href: '/guide' }, 
-    { name: "Contact", description: "Get in Touch", href: '/guide' }, 
-    { name: "Careers", description: "Join Our Team", href: '/guide' }, 
-  ],
-  // docs: [
-  //   { name: "Developer Docs", description: "Explore Guides", href: '/docs'}, 
-  //   { name: "API Doc Templates", description: "Use Templates", href: '/docs' }, 
-  //   { name: "Solana Integration", description: "Integrate Easily", href: '/docs' }, 
-  //   { name: "Sandbox/Test Environment", description: "Test Safely", href: '/docs' }, 
-  // ],
+// const navItems = {
+//   APIs: [
+//     { name: "NFT API", description: "NFT data access", href: '/docs' },
+//     { name: "Token API", description: "Token info", href: '/docs' },
+//     { name: "Transfers API", description: "Asset transfers", href: '/docs' },
+//     { name: "Gas Manager API", description: "Gas optimization", href: '/docs' },
+//     { name: "Smart Websockets", description: "Real-time events", href: '/docs' },
+//     { name: "Supernode", description: "The web3 engine", href: '/docs' },
+//   ],
+//   BlockChains: [
+//     { name: "Ethereum", description: "Smart contracts", href: '/docs' },
+//     { name: "Solana", description: "Scalable blockchain", href: '/docs' },
+//   ],
+//   SDKs: [
+//     { name: "Javascript SDK", description: "Web3 with JS", href: '/docs' },
+//     { name: "Python SDK", description: "Web3 with Python", href: '/docs' },
+//   ],
+//   Tools: [
+//     { name: "Sandbox", description: "Test environment", href: '/doc' },
+//     { name: "Create Web3 Dapp", description: "Build Dapps", href: '/docs' },
+//   ],
+//   publish: [
+//     { name: "Submit API", description: "Publish", href: '/signup-form' },
+//     { name: "API Guidelines", description: "Get Guided", href: '/signup-form' },
+//   ],
+//   forum: [
+//     { name: "DAO Voting", description: "Participate", href: '/signup-form' }, 
+//     { name: "Discussion Forum", description: "Engage", href: '/sign-form' }, 
+//     { name: "Contribute", description: "Join Us", href: '/sign-form' }, 
+//   ],
+//   morlabs: [
+//     { name: "About", description: "Learn More", href: '/guide' }, 
+//     { name: "Contact", description: "Get in Touch", href: '/guide' }, 
+//     { name: "Careers", description: "Join Our Team", href: '/guide' }, 
+//   ],
+//   docs: [
+//     { name: "Developer Docs", description: "Explore Guides", href: '/docs'}, 
+//     { name: "API Doc Templates", description: "Use Templates", href: '/docs' }, 
+//     { name: "Solana Integration", description: "Integrate Easily", href: '/docs' }, 
+//     { name: "Sandbox/Test Environment", description: "Test Safely", href: '/docs' }, 
+//   ],
 
      
-};
+// };
 
 interface NavItemProps {
   children: React.ReactNode;
@@ -197,16 +197,16 @@ const Navbar = () => {
                     </div> */}
                     {/* SDKs Section */}
                     {/* <div>
-                      <h4 className="font-semibold text-sm text-white">SDKs</h4>
-                      {navItems.SDKs.map((item) => (
-                        <MenuItem key={item.name} className="flex items-center justify-between text-white" placeholder=""
-                        onPointerEnterCapture={() => {}}
-                        onPointerLeaveCapture={() => {}}>
-                          <span><a href={item.href} className="font-medium text-sm">{item.name}</a></span>
-                          <span><a href={item.href} className="text-xs text-gray-500">{item.description}</a></span>
-                        </MenuItem>
-                      ))}
-                    </div> */}
+                    //   <h4 className="font-semibold text-sm text-white">SDKs</h4>
+                    //   {navItems.SDKs.map((item) => (
+                    //     <MenuItem key={item.name} className="flex items-center justify-between text-white" placeholder=""
+                    //     onPointerEnterCapture={() => {}}
+                    //     onPointerLeaveCapture={() => {}}>
+                    //       <span><a href={item.href} className="font-medium text-sm">{item.name}</a></span>
+                    //       <span><a href={item.href} className="text-xs text-gray-500">{item.description}</a></span>
+                    //     </MenuItem>
+                    //   ))}
+                    // </div> */}
                     {/* Tools Section */}
                     {/* <div>
                       <h4 className="font-semibold text-sm text-white">Tools</h4>
@@ -255,8 +255,8 @@ const Navbar = () => {
                         <span><a href={item.href} className="text-xs text-gray-500">{item.description}</a></span>
                       </MenuItem>
                     ))}
-                  </div> */}
-{/*                   
+                  </div>
+                  
                 </div>
               )} */}
             </li>
@@ -292,9 +292,9 @@ const Navbar = () => {
                         <span><a href={item.href} className="text-xs text-gray-500">{item.description}</a></span>
                       </MenuItem>
                     ))}
-                  </div> */}
+                  </div>
                   
-                {/* </div>
+                </div>
               )} */}
             </li>
             {/* Company Dropdown */}
@@ -329,9 +329,9 @@ const Navbar = () => {
                         <span><a href={item.href} className="text-xs text-gray-500">{item.description}</a></span>
                       </MenuItem>
                     ))}
-                  </div> */}
+                  </div>
                   
-                {/* </div>
+                </div>
               )} */}
             </li>
             {/* Docs Dropdown */}
@@ -341,7 +341,7 @@ const Navbar = () => {
               onMouseOver={() => handleMouseOver("docs")}
               onMouseLeave={handleMouseLeave}
             >
-              <Link href="/guide" passHref>
+              <Link href="/docs" passHref>
               <button
                 className="font-medium flex items-center"
                 style={{ color: "white" }}
@@ -366,9 +366,9 @@ const Navbar = () => {
                         <span><a href={item.href} className="text-xs text-gray-500">{item.description}</a></span>
                       </MenuItem>
                     ))}
-                  </div> */}
+                  </div>
                   
-                {/* </div>
+                </div>
               )} */}
             </li>
         </ul>
@@ -476,8 +476,8 @@ const Navbar = () => {
                         <span className="text-xs text-gray-500">{item.description}</span>
                       </MenuItem>
                     ))}
-                  </div> */}
-                {/* </div>
+                  </div>
+                </div>
               )} */}
             </li>
             {/* Publish Your API Dropdown */}
@@ -512,9 +512,9 @@ const Navbar = () => {
                         <span className="text-xs text-gray-500">{item.description}</span>
                       </MenuItem>
                     ))}
-                  </div> */}
+                  </div>
                   
-                {/* </div>
+                </div>
               )} */}
             </li>
             {/* Community Dropdown */}
@@ -549,9 +549,9 @@ const Navbar = () => {
                         <span className="text-xs text-gray-500">{item.description}</span>
                       </MenuItem>
                     ))}
-                  </div> */}
+                  </div>
                   
-                {/* </div>
+                </div>
               )} */}
             </li>
             {/* Company Dropdown */}
@@ -570,8 +570,8 @@ const Navbar = () => {
                 <ChevronDownIcon className="w-5 h-5 ml-1" />
               </button>
               </Link>
-              {/* {activeDropdown === "company" && (
-                <div className="absolute left-0 mt-2 w-64 bg-black border border-green-500 rounded-lg shadow-lg z-10"> */}
+              {activeDropdown === "company" && (
+                <div className="absolute left-0 mt-2 w-64 bg-black border border-green-500 rounded-lg shadow-lg z-10">
                   {/* company Section */}
                   {/* <div className="p-4 space-y-2">
                     
@@ -588,8 +588,8 @@ const Navbar = () => {
                     ))}
                   </div> */}
                   
-                {/* </div>
-              )} */}
+                </div>
+              )}
             </li>
             {/* Docs Dropdown */}
 
@@ -607,8 +607,8 @@ const Navbar = () => {
                 <ChevronDownIcon className="w-5 h-5 ml-1" />
               </button>
               </Link>
-              {/* {activeDropdown === "docs" && (
-                <div className="absolute left-0 mt-2 w-64 bg-black border border-green-500 rounded-lg shadow-lg z-10"> */}
+              {activeDropdown === "docs" && (
+                <div className="absolute left-0 mt-2 w-64 bg-black border border-green-500 rounded-lg shadow-lg z-10">
                   {/* Docs Section */}
                   {/* <div className="p-4 space-y-2">
                     
@@ -625,8 +625,8 @@ const Navbar = () => {
                     ))}
                   </div> */}
                   
-                {/* </div>
-              )} */}
+                </div>
+              )}
             </li> 
           </ul>
           <div className="mt-4 flex items-center gap-2">

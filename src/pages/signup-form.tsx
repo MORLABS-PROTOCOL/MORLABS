@@ -65,8 +65,9 @@ const SignUpForm: React.FC = () => {
       }
     } else if (step === 2) {
       if (password && password === confirmPassword) {
-        await handleSubmit(); // Call the API when user reaches the last step
+        // await handleSubmit(); // Call the API when user reaches the last step
         setStep(3)
+        setIsButtonActive(true);
       }
     }
   };
@@ -79,33 +80,39 @@ const SignUpForm: React.FC = () => {
     }
   };
 
-  const handleSubmit = async (e: React.FormEvent<HTMLFormElement>) => {
-    if (e) e.preventDefault();
+  // const handleSubmit = async (e: React.FormEvent<HTMLFormElement>) => {
+  //   if (e) e.preventDefault();
 
-    try {
+    // try {
       // Clear any previous error messages
-      setError('');
-      setSuccessMessage('');
+      // setError('');
+      // setSuccessMessage('');
 
       // Make the POST request
-      const response = await fetch('https://morlabsprotocol.vercel.app/waitlist', {
-        method: 'POST',
-        headers: {
-          'Content-Type': 'application/json',
-        },
-        body: JSON.stringify({ email }),
-      });
+    //   const response = await fetch('https://morlabsprotocol.vercel.app/waitlist', {
+    //     method: 'POST',
+    //     headers: {
+    //       accept : 'application/json',
+    //       'Content-Type': 'application/json',
+    //     },
+    //     body: JSON.stringify({ email }),
+    //   });
 
-      if (!response.ok) {
-        throw new Error('Network response was not ok');
-    }
+    //   if (!response.ok) {
+    //     throw new Error('Network response was not ok');
+    // }
 
-    const result = await response.json();
-    console.log('Successfully joined the waitlist', result);
+    // const result = await response.json();
+    // console.log('Successfully joined the waitlist', result);
 
-  } catch (err) {
-    setError('There was a problem with the fetch operation:', err);
-  }
+  // } catch (err) {
+  //   setError('There was a problem with the fetch operation:', err);
+  // }
+
+
+
+
+
     //     setSuccessMessage('You have successfully joined the waitlist!');
     //     setStep(2); // Move to the final step after successful submission
     //   } else {
@@ -114,7 +121,7 @@ const SignUpForm: React.FC = () => {
     // } catch (err) {
     //   setError('An error occurred. Please try again later.');
     // }
-  };
+  // };
 
 // const SignUpForm: React.FC = () => {
   return (
@@ -154,7 +161,9 @@ const SignUpForm: React.FC = () => {
 
       {step === 1 && (
         <>
-          <form onSubmit={handleSubmit} className="space-y-4">
+          <form 
+          // onSubmit={handleSubmit} 
+          className="space-y-4">
             <input
               type="text"
               placeholder="Tell us your name..."
@@ -176,11 +185,12 @@ const SignUpForm: React.FC = () => {
               className="w-full px-4 py-2 border border-gray-300 rounded-lg focus:outline-none"
             />
             <button 
-        type="submit" 
+        // type="submit" 
         className={`w-full px-4 py-2 mt-4 rounded-lg ${
           isButtonActive ? 'bg-green-500 text-white' : 'bg-gray-400 text-gray-300 cursor-not-allowed'
         }`}
         disabled={!isButtonActive}
+        onClick={handleNextStep}
       >
         Continue
       </button>
@@ -190,7 +200,9 @@ const SignUpForm: React.FC = () => {
 
       {step === 2 && (
         <>
-          <form onSubmit={handleSubmit} className="space-y-4">
+          <form 
+          // onSubmit={handleSubmit} 
+          className="space-y-4">
             <input
               type="password"
               placeholder="Enter password..."
@@ -211,21 +223,22 @@ const SignUpForm: React.FC = () => {
               }}
               className="w-full px-4 py-2 border border-gray-300 rounded-lg focus:outline-none"
             />
-             {/* <button 
-        type="submit" 
+             <button 
+        // type="submit" 
         className={`w-full px-4 py-2 mt-4 rounded-lg ${
           isButtonActive ? 'bg-green-500 text-white' : 'bg-gray-400 text-gray-300 cursor-not-allowed'
         }`}
         disabled={!isButtonActive}
+        onClick={handleNextStep}
       >
         Continue
-      </button> */}
+      </button>
           </form>
         </>
       )}
 
-      {error && <p className="text-red-500 mt-4">{error}</p>}
-      {successMessage && <p className="text-green-500 mt-4">{successMessage}</p>}
+      {/* {error && <p className="text-red-500 mt-4">{error}</p>}
+      {successMessage && <p className="text-green-500 mt-4">{successMessage}</p>} */}
 
       {/* <button
         onClick={handleNextStep}
@@ -309,7 +322,7 @@ const SignUpForm: React.FC = () => {
           </div>
         )}
 
-        {step > 1 && (
+        {/* {step > 1 && (
           <button
             className={`w-full px-4 py-2 mt-4 rounded-lg ${
               isButtonActive ? 'bg-green-500 text-white' : 'bg-gray-400 text-gray-300 cursor-not-allowed'
@@ -319,7 +332,7 @@ const SignUpForm: React.FC = () => {
           >
             Continue
           </button>
-        )}
+        )} */}
 
         {/* Dots indicating progress */}
         <div className="flex justify-center mt-6 space-x-2">
