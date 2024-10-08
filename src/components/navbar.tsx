@@ -60,27 +60,80 @@ const Navbar = () => {
         </div>
         <ul
           tabIndex={0}
-          className="menu menu-sm dropdown-content bg-base-100 rounded-box z-[1] mt-3 w-52 p-2 shadow">
+          className="menu menu-sm dropdown-content bg-base-100 rounded-box z-[1] mt-3 w-96 p-2 shadow">
           <li><a href="/for-dev">
               <button
-                className="font-medium flex items-center"
-                style={{color: "white" }}
+                className="font-medium flex items-center p-2"
+                style={{color: "black" }}
               >
                 For Developers
                 {/* <ChevronDownIcon className="w-5 h-5 ml-1" /> */}
               </button>
               </a></li>
-          <li>
-            <a>Parent</a>
-            <ul className="p-2">
-              <li><a>Submenu 1</a></li>
-              <li><a>Submenu 2</a></li>
-            </ul>
-          </li>
-          <li><a>Item 3</a></li>
+              <li>
+        <details>
+        <summary><a href="/publish-api">
+              <button
+                className="font-medium flex items-center p-2"
+                style={{color: "black" }}
+              >
+                 Publish Your API
+              </button>
+              </a></summary>
+              </details></li>
+              <li>
+        <details>
+        <summary><a href="/signup-form">
+              <button
+                className="font-medium flex items-center p-2"
+                style={{color: "black" }}
+              >
+                 Community
+               
+              </button>
+              </a></summary>
+              </details>
+              </li>
+
+              <li>
+        <details>
+        <summary><a href="/">
+              <button
+                className="font-medium flex items-center p-2"
+                style={{color: "black" }}
+              >
+                 Company
+                
+              </button>
+              </a></summary>
+              </details></li>
+
+              <li>
+        <details>
+        <summary><a href="/docs">
+              <button
+                className="font-medium flex items-center p-2"
+                style={{color: "black" }}
+              >
+                 Docs
+                
+              </button>
+              </a></summary>
+              </details>
+              </li>
+              <div className="mt-4 flex items-center gap-2 ml-5 text-green-500">
+            
+              <i className="fa-brands fa-twitter text-base pl-8 text-green-500" />
+           
+              <i className="fa-brands fa-facebook text-base pl-8 text-green-500" />
+            
+              <i className="fa-brands fa-instagram text-base pl-8 text-green-500" />
+            
+          </div>
         </ul>
+        
       </div>
-      <a className="btn btn-ghost text-xl ml-5" href="/for-dev">
+      <a className="btn btn-ghost text-xl ml-5" href="/">
           <span className="text-4xl mr-2" style={{ color: "#00FF99" }}>
             m
           </span>{" "}
@@ -101,15 +154,7 @@ const Navbar = () => {
               </button>
               </a></summary>
               </details></li>
-        {/* <li>
-          <details>
-            <summary>Parent</summary>
-            <ul className="p-2">
-              <li><a>Submenu 1</a></li>
-              <li><a>Submenu 2</a></li>
-            </ul>
-          </details>
-        </li> */}
+      
         <li>
         <details>
         <summary><a href="/publish-api">
