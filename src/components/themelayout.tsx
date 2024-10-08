@@ -3,7 +3,11 @@
 import React from "react";
 
 export function Layout({ children }: { children: React.ReactNode }) {
-  return { children };
+  return (
+    <div className="app-container">
+      {children}
+    </div>
+  )
 }
 
 export default Layout;
