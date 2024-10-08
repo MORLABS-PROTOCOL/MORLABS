@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import "../styles/globals.css";
+// import "../styles/globals.css";
 
 import { FaCoins } from "react-icons/fa";  // icon for Coinflow
 import { SiSolana } from "react-icons/si"; // icon for Solana

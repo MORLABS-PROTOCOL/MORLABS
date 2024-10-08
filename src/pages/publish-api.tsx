@@ -1,5 +1,5 @@
 import { Button, Typography } from "@material-tailwind/react";
-import "../styles/globals.css";
+// import "../styles/globals.css";
 import { FaArrowRight, FaRegHandPointRight } from 'react-icons/fa';
 import { FaDatabase, FaEthereum, FaCube, FaFire, FaServer, FaCloud } from 'react-icons/fa';
 import { FaWallet, FaStream } from 'react-icons/fa';

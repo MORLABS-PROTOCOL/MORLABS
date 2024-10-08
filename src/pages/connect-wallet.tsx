@@ -1,6 +1,6 @@
 // connect-wallet.tsx
 import { useState } from 'react';
-import "../styles/globals.css";
+// import "../styles/globals.css";
 import Image from 'next/image';
 
 import { FaWallet } from 'react-icons/fa'; // General wallet icon

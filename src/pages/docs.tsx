@@ -1,6 +1,6 @@
 import React from 'react';
 import { useState } from 'react';
-import "../styles/globals.css";
+// import "../styles/globals.css";
 import Typography from "@material-tailwind/react";
 import { FixedPlugin } from '@/components';
 // import Navbar from "../components/navbar";
