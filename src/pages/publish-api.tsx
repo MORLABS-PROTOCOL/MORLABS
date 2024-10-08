@@ -1,4 +1,4 @@
-import { Button, Typography } from "@material-tailwind/react";
+// import { Button, Typography } from "@material-tailwind/react";
 // import "../styles/globals.css";
 import { FaArrowRight, FaRegHandPointRight } from 'react-icons/fa';
 import { FaDatabase, FaEthereum, FaCube, FaFire, FaServer, FaCloud } from 'react-icons/fa';
@@ -24,25 +24,13 @@ const APIPage: React.FC = () => {
       <header className="grid !min-h-[49rem] px-8">
         <div className="container mx-auto mt-32 grid h-full w-full grid-cols-1 place-items-center lg:mt-14">
           <div className="col-span-1">
-            <Typography 
-            variant="h1" 
-            color="white" 
-            className="text-5xl font-bold mb-4"
-            placeholder=""
-            onPointerEnterCapture={() => {}}
-            onPointerLeaveCapture={() => {}}>
-            Your Gateway to Seamless <br />
-            Web3 Integration
-            </Typography>
-            <Typography
-              variant="lead"
-              className="text-lg mb-8"
-              placeholder=""
-              onPointerEnterCapture={() => {}}
-              onPointerLeaveCapture={() => {}}
-            >
-              Accelerate Your Web3 Journey: <br />Explore, Build, and Scale With Our API Directory
-            </Typography>
+          <h1 className="text-5xl font-bold mb-4 text-white">
+  Your Gateway to Seamless <br />
+  Web3 Integration
+</h1>
+<p className="text-lg mb-8 text-white">
+  Accelerate Your Web3 Journey: <br />Explore, Build, and Scale With Our API Directory
+</p>
         
             <div className="">
             <Link href="/guide" passHref>

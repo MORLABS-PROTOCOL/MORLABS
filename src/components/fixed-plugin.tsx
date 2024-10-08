@@ -1,18 +1,13 @@
 "use client";
 import Image from "next/image";
-import { Button } from "@material-tailwind/react";
+// import { Button } from "@material-tailwind/react";
 import React from 'react';
 
-const FixedPlugin = () => { 
+const FixedPlugin = () => {
   return (
     <a href="/" target="_blank">
-      <Button
-        color="white"
-        size="sm"
-        className="!fixed bottom-4 right-4 flex gap-1 pl-2 items-center border border-blue-gray-50"
-        placeholder=""
-        onPointerEnterCapture={() => {}}
-        onPointerLeaveCapture={() => {}}
+      <button
+        className="btn btn-primary btn-sm fixed bottom-4 right-4 flex gap-1 pl-2 items-center border border-white bg-white text-black"
       >
 
         <Image
@@ -23,7 +18,7 @@ const FixedPlugin = () => {
           src="/favicon.jpg"
         />{" "}
         Morlabs-Protocols
-      </Button>
+      </button>
     </a>
   );
 }

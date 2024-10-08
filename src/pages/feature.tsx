@@ -1,7 +1,7 @@
 "use client";
 
 import React from "react";
-import { Typography } from "@material-tailwind/react";
+// import { Typography } from "@material-tailwind/react";
 
 import {
   CursorArrowRaysIcon,
@@ -200,20 +200,14 @@ export function Features() {
   return (
     <section className="py-28 px-4">
       <div className="container mx-auto mb-20 text-center">
-        <Typography color="white" className="mb-2 font-bold uppercase"  placeholder="" onPointerEnterCapture={() => {}} onPointerLeaveCapture={() => {}}>
-          Your Developer Dashboard
-        </Typography>
-        <Typography variant="h1" color="white" className="mb-4"  placeholder="" onPointerEnterCapture={() => {}} onPointerLeaveCapture={() => {}}>
-          Simplifying the integrations of APIs <br /> into Web3 Projects
-        </Typography>
-        <Typography
-          variant="lead"
-          className="mx-auto w-full px-4 !text-white lg:w-11/12 lg:px-8"
-          placeholder="" onPointerEnterCapture={() => {}} onPointerLeaveCapture={() => {}}
-        >
-          Manage Your APIs, SDKs, and Projects in One Place. View all your Web3 projects, track
-          progress, and access your integrations.
-        </Typography>
+      <h2 className="text-white mb-2 font-bold uppercase">Your Developer Dashboard</h2>
+<h1 className="text-white mb-4">
+  Simplifying the integrations of APIs <br /> into Web3 Projects
+</h1>
+<p className="text-white mx-auto w-full px-4 lg:w-11/12 lg:px-8">
+  Manage Your APIs, SDKs, and Projects in One Place. View all your Web3 projects, track
+  progress, and access your integrations.
+</p>
         <ApiProviders/> 
       </div>
       <BenefitsCarousel/>

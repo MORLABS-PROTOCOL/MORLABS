@@ -1,44 +1,17 @@
-import React from "react";
-
-import { Typography, Card, CardBody } from "@material-tailwind/react";
+import React from 'react';
 
 interface InfoCardProps {
   title: string;
   children: React.ReactNode;
 }
 
-
-export function InfoCard({ title, children }: InfoCardProps) {
+export const InfoCard = ({ title, children }: InfoCardProps) => {
   return (
-    <Card 
-    color="transparent" 
-    shadow={false} 
-    placeholder=""
-    onPointerEnterCapture={() => {}}
-    onPointerLeaveCapture={() => {}}
-    >
-      <CardBody 
-      className="grid px-0"
-      placeholder=""
-      onPointerEnterCapture={() => {}}
-      onPointerLeaveCapture={() => {}}>
-        <Typography 
-        variant="h2" 
-        color="blue-gray" 
-        className="mb-2"
-        placeholder=""
-        onPointerEnterCapture={() => {}}
-        onPointerLeaveCapture={() => {}}>
-          {title}
-        </Typography>
-        <Typography 
-        className=" font-normal"
-        placeholder=""
-        onPointerEnterCapture={() => {}}
-        onPointerLeaveCapture={() => {}}>{children}</Typography>
-      </CardBody>
-    </Card>
+    <div className="card bg-base-100 shadow-xl">
+      <div className="card-body">
+        <h2 className="card-title">{title}</h2>
+        <p>{children}</p>
+      </div>
+    </div>
   );
-}
-
-export default InfoCard;
+};

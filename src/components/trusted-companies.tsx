@@ -10,7 +10,12 @@ const companies = [
   { name: "Bitcoin", icon: <FaBitcoin /> },
   // Add more Web3 companies as needed
 ];
+/*
+This one is okay. It's not using Material tailwind
 
+Oya, now make we enter the pages
+okey
+*/
 const TrustedCompanies = () => {
   return (
     <section className="trusted-section py-10 bg-gradient-to-b from-gray-900 via-gray-800 to-gray-700 text-white">

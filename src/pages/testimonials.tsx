@@ -1,35 +1,35 @@
 "use client";
 
 import React from "react";
-import { Typography, Card, CardBody, Avatar } from "@material-tailwind/react";
+// import { Typography, Card, CardBody, Avatar } from "@material-tailwind/react";
 import { UserIcon } from "@heroicons/react/24/solid";
 import TestimonialCard from "../components/testimonial-card";
 import Image from "next/image";
 
 
-const TESTIMONIALS = [
-  {
-    feedback:
-      "It has been a game-changer for my business. Their dedication, expertise, and attention to detail have truly set them apart. I highly recommend their services!",
-    client: "Samuel Bassey",
-    title: "CEO Kextraco.",
-    img: "/image/avatar1.jpg",
-  },
-  {
-    feedback:
-      "It understood my unique needs and delivered a tailored solution promptly. Their customer support is top-notch, and I appreciate their commitment.",
-    client: "John Deo",
-    title: "MARKETING @ APPLE INC.",
-    img: "/image/avatar2.png",
-  },
-  {
-    feedback:
-      "They not only met but exceeded our expectations. Their innovative approach and technical proficiency have been instrumental in our success.",
-    client: "Genzy Bassey",
-    title: "CFO @ APPLE INC..",
-    img: "/image/avatar3.png",
-  },
-];
+// const TESTIMONIALS = [
+//   {
+//     feedback:
+//       "It has been a game-changer for my business. Their dedication, expertise, and attention to detail have truly set them apart. I highly recommend their services!",
+//     client: "Samuel Bassey",
+//     title: "CEO Kextraco.",
+//     img: "/image/avatar1.jpg",
+//   },
+//   {
+//     feedback:
+//       "It understood my unique needs and delivered a tailored solution promptly. Their customer support is top-notch, and I appreciate their commitment.",
+//     client: "John Deo",
+//     title: "MARKETING @ APPLE INC.",
+//     img: "/image/avatar2.png",
+//   },
+//   {
+//     feedback:
+//       "They not only met but exceeded our expectations. Their innovative approach and technical proficiency have been instrumental in our success.",
+//     client: "Genzy Bassey",
+//     title: "CFO @ APPLE INC..",
+//     img: "/image/avatar3.png",
+//   },
+// ];
 
 export function Testimonials() {
   return (
