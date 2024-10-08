@@ -198,16 +198,16 @@ const FEATURES = [
 export function Features() {
   return (
     <section className="py-28 px-4">
-      <div className="container mx-auto mb-20 text-center">
-        <h2 className="text-white mb-2 font-bold uppercase">Your Developer Dashboard</h2>
-        <h1 className="text-white mb-4">
+      <div className="container mx-auto mb-25 text-center">
+        <h2 className="text-white mb-2 font-bold uppercase text-3xl">Your Developer Dashboard</h2>
+        <h1 className="text-white mb-4 text-lg">
           Simplifying the integrations of APIs <br /> into Web3 Projects
         </h1>
-        <p className="text-white mx-auto w-full px-4 lg:w-11/12 lg:px-8">
+        <p className="text-white mx-auto w-full px-4 lg:w-11/12 lg:px-8 italic py-3">
           Manage Your APIs, SDKs, and Projects in One Place. View all your Web3 projects, track
-          progress, and access your integrations.
+          progress, and access your integrations...
         </p>
-        <ApiProviders />
+
       </div>
       <BenefitsCarousel />
 

@@ -123,7 +123,7 @@ export const TrustedCompanies = () => {
 
   return (
     <section>
-      <div className="mt-10 flex justify-center space-x-6">
+      <div className="mx-auto sm:flex justify-center space-x-6">
         {companies.map((company, index) => (
           <div key={index} className="company-card flex flex-col items-center">
             <div className="company-icon text-5xl text-white w-[130px] h-[60px] flex items-center justify-center mb-2p-4 border border-green-500 rounded-lg hover:bg-green-400 transition-all">
@@ -141,8 +141,8 @@ export const TrustedCompanies = () => {
 
 function Hero() {
   return (
-    <div className="flex flex-col items-center justify-center text-center text-white h-screen">
-      <header className="grid !min-h-[49rem] px-8">
+    <div className="flex flex-col items-center justify-center text-center text-white h-full">
+      <header className="grid px-8">
         <div className="container mx-auto mt-32 grid h-full w-full grid-cols-1 place-items-center lg:mt-14">
           <div className="col-span-1">
 
