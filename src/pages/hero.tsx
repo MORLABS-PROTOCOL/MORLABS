@@ -2,7 +2,6 @@
 
 // import Image from "next/image";
 import Link from "next/link";
-// import { Button, Typography } from "@material-tailwind/react";
 import { useState } from 'react';
 import { FaEthereum, FaBitcoin, FaLinkedin, FaGithub } from 'react-icons/fa'; // Placeholder icons
 import { SiSolana, SiPolkadot, SiChainlink } from 'react-icons/si'; // Web3 specific icons
@@ -124,17 +123,17 @@ export const TrustedCompanies = () => {
 
   return (
     <section>
-        <div className="mt-10 flex justify-center space-x-6"> 
-          {companies.map((company, index) => (
-            <div key={index} className="company-card flex flex-col items-center">
-              <div className="company-icon text-5xl text-white w-[130px] h-[60px] flex items-center justify-center mb-2p-4 border border-green-500 rounded-lg hover:bg-green-400 transition-all">
-                {company.icon}
-                <p className="company-name text-sm font-semibold">{company.name}</p>
-              </div>
-             
+      <div className="mt-10 flex justify-center space-x-6">
+        {companies.map((company, index) => (
+          <div key={index} className="company-card flex flex-col items-center">
+            <div className="company-icon text-5xl text-white w-[130px] h-[60px] flex items-center justify-center mb-2p-4 border border-green-500 rounded-lg hover:bg-green-400 transition-all">
+              {company.icon}
+              <p className="company-name text-sm font-semibold">{company.name}</p>
             </div>
-          ))}
-        </div>
+
+          </div>
+        ))}
+      </div>
     </section>
   );
 };
@@ -146,36 +145,36 @@ function Hero() {
       <header className="grid !min-h-[49rem] px-8">
         <div className="container mx-auto mt-32 grid h-full w-full grid-cols-1 place-items-center lg:mt-14">
           <div className="col-span-1">
-          Replace line 149 - 167 with this:
+            Replace line 149 - 167 with this:
 
-<h1 className="text-5xl font-bold mb-4 text-white">
-  Your Gateway to Seamless <br />
-  Web3 Integration
-</h1>
-<p className="text-lg mb-8 text-white">
-  Accelerate Your Web3 Journey: <br />Explore, Build, and Scale With Our API Directory
-</p>
-        
+            <h1 className="text-5xl font-bold mb-4 text-white">
+              Your Gateway to Seamless <br />
+              Web3 Integration
+            </h1>
+            <p className="text-lg mb-8 text-white">
+              Accelerate Your Web3 Journey: <br />Explore, Build, and Scale With Our API Directory
+            </p>
+
             <div className="">
               {/* <JoinWaitlist/> */}
               <Link href="/signup-form" passHref>
-            <button
-            type="submit"
-            className="p-2 border-t border-l border-r border-white bg-gree-500 text-white rounded hover:bg-green-900"
-          >
-            {/* className="px-6 py-3 bg-green-800 rounded-full hover:bg-green-600 transition duration-300 text-white"style={{ backgroundColor: "#00FF99" }} */}
-            JoinWaitlist
-          </button>
-          </Link>
-            
+                <button
+                  type="submit"
+                  className="p-2 border-t border-l border-r border-white bg-gree-500 text-white rounded hover:bg-green-900"
+                >
+                  {/* className="px-6 py-3 bg-green-800 rounded-full hover:bg-green-600 transition duration-300 text-white"style={{ backgroundColor: "#00FF99" }} */}
+                  JoinWaitlist
+                </button>
+              </Link>
+
             </div>
-               <p className="mt-6 text-sm">Trusted by 100+ B2B companies</p>
-               <TrustedCompanies />
-            </div>
-          
+            <p className="mt-6 text-sm">Trusted by 100+ B2B companies</p>
+            <TrustedCompanies />
+          </div>
+
         </div>
       </header>
-      
+
     </div>
   );
 }

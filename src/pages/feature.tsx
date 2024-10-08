@@ -1,7 +1,6 @@
 "use client";
 
 import React from "react";
-// import { Typography } from "@material-tailwind/react";
 
 import {
   CursorArrowRaysIcon,
@@ -39,20 +38,20 @@ const ApiProviders = () => {
 
 
       <div className="flex flex-col md:flex-row justify-center items-center gap-8">
-          <div className="flex flex-col items-center border border-gray-600 rounded-lg py-6 px-12">
-            <span className="text-3xl font-bold text-green-400">1000+</span>
-            <span className="text-lg text-gray-400">users per month</span>
-          </div>
-          <div className="flex flex-col items-center bg-gradient-to-t from-purple-500 to-green-500 rounded-lg py-6 px-12 mb-12">
-            <span className="text-3xl font-bold text-white">92%</span>
-            <span className="text-lg text-gray-200">
-              of users are satisfied with the platform
-            </span>
-          </div>
-          <div className="flex flex-col items-center border border-gray-600 rounded-lg py-6 px-12">
-            <span className="text-3xl font-bold text-green-400">5000+</span>
-            <span className="text-lg text-gray-400">waiting hours reduced</span>
-          </div>
+        <div className="flex flex-col items-center border border-gray-600 rounded-lg py-6 px-12">
+          <span className="text-3xl font-bold text-green-400">1000+</span>
+          <span className="text-lg text-gray-400">users per month</span>
+        </div>
+        <div className="flex flex-col items-center bg-gradient-to-t from-purple-500 to-green-500 rounded-lg py-6 px-12 mb-12">
+          <span className="text-3xl font-bold text-white">92%</span>
+          <span className="text-lg text-gray-200">
+            of users are satisfied with the platform
+          </span>
+        </div>
+        <div className="flex flex-col items-center border border-gray-600 rounded-lg py-6 px-12">
+          <span className="text-3xl font-bold text-green-400">5000+</span>
+          <span className="text-lg text-gray-400">waiting hours reduced</span>
+        </div>
         {/* </div> */}
 
 
@@ -92,7 +91,7 @@ export const BenefitsCarousel = () => {
           }}
           modules={[Autoplay]} // Add Autoplay as a module
         >
-           {/* Benefit 1 - Fast SDK Integration */}
+          {/* Benefit 1 - Fast SDK Integration */}
           <SwiperSlide>
             <div className="flex flex-col items-center text-center">
               <FaRocket size={40} className="text-green-500 mb-4" />
@@ -127,7 +126,7 @@ export const BenefitsCarousel = () => {
               <p className="text-gray-400">Test your APIs in a dedicated sandbox environment before going live.</p>
             </div>
           </SwiperSlide>
-          
+
           {/* Benefit 5 - Decentralization */}
           <SwiperSlide>
             <div className="flex flex-col items-center text-center">
@@ -200,17 +199,17 @@ export function Features() {
   return (
     <section className="py-28 px-4">
       <div className="container mx-auto mb-20 text-center">
-      <h2 className="text-white mb-2 font-bold uppercase">Your Developer Dashboard</h2>
-<h1 className="text-white mb-4">
-  Simplifying the integrations of APIs <br /> into Web3 Projects
-</h1>
-<p className="text-white mx-auto w-full px-4 lg:w-11/12 lg:px-8">
-  Manage Your APIs, SDKs, and Projects in One Place. View all your Web3 projects, track
-  progress, and access your integrations.
-</p>
-        <ApiProviders/> 
+        <h2 className="text-white mb-2 font-bold uppercase">Your Developer Dashboard</h2>
+        <h1 className="text-white mb-4">
+          Simplifying the integrations of APIs <br /> into Web3 Projects
+        </h1>
+        <p className="text-white mx-auto w-full px-4 lg:w-11/12 lg:px-8">
+          Manage Your APIs, SDKs, and Projects in One Place. View all your Web3 projects, track
+          progress, and access your integrations.
+        </p>
+        <ApiProviders />
       </div>
-      <BenefitsCarousel/>
+      <BenefitsCarousel />
 
 
     </section>

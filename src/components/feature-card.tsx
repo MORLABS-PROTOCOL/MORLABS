@@ -1,8 +1,4 @@
-import {
-  Typography,
-  Card,
-  CardBody,
-} from "@material-tailwind/react";
+
 
 interface FeatureCardProps {
   icon: React.ElementType;

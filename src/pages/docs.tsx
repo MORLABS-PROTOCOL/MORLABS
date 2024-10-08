@@ -1,7 +1,6 @@
 import React from 'react';
 import { useState } from 'react';
 // import "../styles/globals.css";
-import Typography from "@material-tailwind/react";
 import { FixedPlugin } from '@/components';
 // import Navbar from "../components/navbar";
 
@@ -17,21 +16,21 @@ const guide: React.FC = () => {
         </div>
 
         <div className="mb-4">
-        <a href="#" className="block text-xl font-bold text-green-700">Morlabs Packages</a>
-      </div>
+          <a href="#" className="block text-xl font-bold text-green-700">Morlabs Packages</a>
+        </div>
         <ul className="p-4 space-y-4">
-        <li>
-          <a href="#Quick" className="block text-sm text-gray-700 hover:text-green-600">Quickstart</a>
-        </li>
-        <li>
-          <a href="#learn" className="block text-sm text-gray-700 hover:text-green-600">Learn Morlabs Packages</a>
-        </li>
-        <li>
-          <a href="#Quick" className="block text-sm text-gray-700 hover:text-green-600">Working with a Morlabs Packages registry</a>
-        </li>
-        <li>
-          <a href="Quick" className="block text-sm text-gray-700 hover:text-green-600">Managing Morlabs packages with workflows</a>
-        </li>
+          <li>
+            <a href="#Quick" className="block text-sm text-gray-700 hover:text-green-600">Quickstart</a>
+          </li>
+          <li>
+            <a href="#learn" className="block text-sm text-gray-700 hover:text-green-600">Learn Morlabs Packages</a>
+          </li>
+          <li>
+            <a href="#Quick" className="block text-sm text-gray-700 hover:text-green-600">Working with a Morlabs Packages registry</a>
+          </li>
+          <li>
+            <a href="Quick" className="block text-sm text-gray-700 hover:text-green-600">Managing Morlabs packages with workflows</a>
+          </li>
           <li>
             <a href="#morlabs" className="block text-sm text-gray-700 hover:text-green-600">
               Morlabs API
@@ -56,7 +55,7 @@ const guide: React.FC = () => {
       </nav>
     );
   };
-  
+
 
   const Header = () => {
     return (
@@ -78,23 +77,23 @@ const guide: React.FC = () => {
     return (
       <div className="flex-1 p-8 overflow-y-auto h-screen">
         <section id="Quick" className="mb-12">
-        <h2 className="text-2xl font-bold mb-4">Quickstart for Morlabs Packages</h2>
-      <h3 className="text-xl mb-2">Publish to Morlabs Packages</h3>
-      <p className="mb-4">
-        In this guide, you&apos;ll create a Morlabs Actions workflow to test your code and then publish it to Morlabs Packages.
-      </p>
-      </section>
+          <h2 className="text-2xl font-bold mb-4">Quickstart for Morlabs Packages</h2>
+          <h3 className="text-xl mb-2">Publish to Morlabs Packages</h3>
+          <p className="mb-4">
+            In this guide, you&apos;ll create a Morlabs Actions workflow to test your code and then publish it to Morlabs Packages.
+          </p>
+        </section>
 
-      <section id="learn" className="mb-12">
+        <section id="learn" className="mb-12">
 
-      <h3 className="text-xl mb-2">Publishing your package</h3>
-      <p>
-        In this guide, you&apos;ll create a Morlabs Actions workflow to test your code and then publish it to Morlabs Packages.
-      </p>
-      </section>
+          <h3 className="text-xl mb-2">Publishing your package</h3>
+          <p>
+            In this guide, you&apos;ll create a Morlabs Actions workflow to test your code and then publish it to Morlabs Packages.
+          </p>
+        </section>
 
         <h1 className="text-3xl font-bold mb-4">Developer Documentation</h1>
-  
+
         {/* Morlabs API Documentation */}
         <section id="morlabs" className="mb-12">
           <h2 className="text-2xl font-semibold mb-2">Morlabs API</h2>
@@ -102,7 +101,7 @@ const guide: React.FC = () => {
             Explore the various APIs offered by Morlabs to integrate with your
             application.
           </p>
-  
+
           {/* Code Example */}
           <div className="bg-gray-100 p-4 rounded-lg">
             <h3 className="text-lg font-medium">Example Request</h3>
@@ -121,14 +120,14 @@ const guide: React.FC = () => {
             </pre>
           </div>
         </section>
-  
+
         {/* API Documentation Template Section */}
         <section id="api-doc-template" className="mb-12">
           <h2 className="text-2xl font-semibold mb-2">
             API Documentation Templates
           </h2>
           <p className="mb-4">Guidelines for uploading API documentation.</p>
-  
+
           <ul className="list-disc list-inside">
             <li>
               Ensure your endpoints are clearly documented with request/response
@@ -138,14 +137,14 @@ const guide: React.FC = () => {
             <li>Use consistent naming conventions across your documentation.</li>
           </ul>
         </section>
-  
+
         {/* Solana Integration Section */}
         <section id="solana" className="mb-12">
           <h2 className="text-2xl font-semibold mb-2">Solana Integration</h2>
           <p className="mb-4">
             Special instructions for integrating with Solana&apos;s blockchain.
           </p>
-  
+
           <div className="bg-gray-100 p-4 rounded-lg">
             <h3 className="text-lg font-medium">Solana API Request</h3>
             <pre className="bg-gray-800 text-white p-4 rounded mt-2">
@@ -161,7 +160,7 @@ const guide: React.FC = () => {
             </pre>
           </div>
         </section>
-  
+
         {/* Sandbox/Test Environment Section */}
         <section id="sandbox" className="mb-12">
           <h2 className="text-2xl font-semibold mb-2">
@@ -170,7 +169,7 @@ const guide: React.FC = () => {
           <p className="mb-4">
             You can use our test environment to try out API requests.
           </p>
-  
+
           <a
             href="/sandbox"
             className="inline-block bg-green-800 text-white py-2 px-4 rounded hover:bg-green-500"
@@ -181,27 +180,27 @@ const guide: React.FC = () => {
       </div>
     );
   };
-  
+
   return (
     <>
-    <div>
-    {/* <Navbar/> */}
-    
-    <div className="flex h-screen">
-      <Sidebar />
-      <div className="flex flex-col flex-1">
-        <Header />
-        <Maincontent />
+      <div>
+        {/* <Navbar/> */}
+
+        <div className="flex h-screen">
+          <Sidebar />
+          <div className="flex flex-col flex-1">
+            <Header />
+            <Maincontent />
+          </div>
+        </div>
       </div>
-    </div>
-    </div>
-    <FixedPlugin />
+      <FixedPlugin />
     </>
   );
 };
 
 export default guide;
-  
-  
+
+
 
 

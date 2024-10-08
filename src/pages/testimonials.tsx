@@ -1,7 +1,6 @@
 "use client";
 
 import React from "react";
-// import { Typography, Card, CardBody, Avatar } from "@material-tailwind/react";
 import { UserIcon } from "@heroicons/react/24/solid";
 import TestimonialCard from "../components/testimonial-card";
 import Image from "next/image";
@@ -45,7 +44,7 @@ export function Testimonials() {
         {/* First testimonial */}
         <div className="bg-[#141414] rounded-xl p-8 w-[300px]">
           <p className="text-sm text-gray-400">
-          &quot;Thanks to Morlabs, I was able to significantly accelerate the development of our new NFT marketplace on Solana.&quot;
+            &quot;Thanks to Morlabs, I was able to significantly accelerate the development of our new NFT marketplace on Solana.&quot;
           </p>
           <p className="font-bold mt-4">- Faith Igwe</p>
           <p className="text-sm text-gray-400">Project Manager</p>
@@ -53,13 +52,13 @@ export function Testimonials() {
 
         {/* Highlighted testimonial */}
         <div className="bg-gradient-to-br from-green-500  via-green-300 to-teal-200 text-black p-8 rounded-xl w-[350px] max-w-md mx-auto">
-        {/* className="bg-gradient-to-b from-teal-400 to-green-500 text-black rounded-xl p-8 w-[350px]"> */}
+          {/* className="bg-gradient-to-b from-teal-400 to-green-500 text-black rounded-xl p-8 w-[350px]"> */}
           <h3 className="text-xl font-bold mb-4">Morlabs has been a game-changer!</h3>
           <p className="text-sm mb-6">
-          &quot;I&apos;ve been struggling to find high-quality APIs for my Solana-based NFT marketplace. Morlabs has been a game-changer! Their API directory is incredibly comprehensive, and the pre-built SDKs have saved me countless hours of development time.&quot;
+            &quot;I&apos;ve been struggling to find high-quality APIs for my Solana-based NFT marketplace. Morlabs has been a game-changer! Their API directory is incredibly comprehensive, and the pre-built SDKs have saved me countless hours of development time.&quot;
           </p>
           <p className="text-sm mb-4">
-          &quot;The testing environment has also been invaluable for ensuring seamless integration.&quot;
+            &quot;The testing environment has also been invaluable for ensuring seamless integration.&quot;
           </p>
           <div className="flex items-center space-x-4">
             <Image
@@ -79,7 +78,7 @@ export function Testimonials() {
         {/* Third testimonial */}
         <div className="bg-[#141414] rounded-xl p-8 w-[300px]">
           <p className="text-sm text-gray-400">
-          &quot;Morlabs has been a fantastic addition to my workflow. The API documentation is clear and concise, making it easy to understand and implement.&quot;
+            &quot;Morlabs has been a fantastic addition to my workflow. The API documentation is clear and concise, making it easy to understand and implement.&quot;
           </p>
           <p className="font-bold mt-4">- Dandy Anonymous</p>
           <p className="text-sm text-gray-400">Lead Dev, Solana Labs</p>
