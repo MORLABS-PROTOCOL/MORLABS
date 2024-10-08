@@ -40,119 +40,119 @@ const Navbar = () => {
   }
 
   return (
-    <div className="max-w-[1200px] flex justify-center items-center container mx-auto fixed top-0 z-50 border-0">
-    <div className="navbar  text-white items-center" style={{ background: 'radial-gradient(circle, #4ade80, black)' }}>
-    <div className="navbar-start ml-auto">
-      <div className="dropdown">
-        <div tabIndex={0} role="button" className="btn btn-ghost lg:hidden">
-          <svg
-            xmlns="http://www.w3.org/2000/svg"
-            className="h-5 w-5"
-            fill="none"
-            viewBox="0 0 24 24"
-            stroke="currentColor">
-            <path
-              strokeLinecap="round"
-              strokeLinejoin="round"
-              strokeWidth="2"
-              d="M4 6h16M4 12h8m-8 6h16" />
-          </svg>
-        </div>
-        <ul
-          tabIndex={0}
-          className="menu menu-sm dropdown-content bg-base-100 rounded-box z-[1] mt-3 w-96 p-2 shadow">
-          <li><a href="/for-dev">
-              <button
-                className="font-medium flex items-center p-2"
-                style={{color: "black" }}
-              >
-                For Developers
-                {/* <ChevronDownIcon className="w-5 h-5 ml-1" /> */}
-              </button>
+    <div className="max-w-[1500px] w-full px-5 flex justify-center items-center container mx-auto fixed top-0 z-50 border-0">
+      <div className="navbar  text-white items-center" style={{ background: 'radial-gradient(circle, #4ade80, black)' }}>
+        <div className="navbar-start ml-auto">
+          <div className="dropdown">
+            <div tabIndex={0} role="button" className="btn btn-ghost lg:hidden">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                className="h-5 w-5"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke="currentColor">
+                <path
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
+                  strokeWidth="2"
+                  d="M4 6h16M4 12h8m-8 6h16" />
+              </svg>
+            </div>
+            <ul
+              tabIndex={0}
+              className="menu menu-sm dropdown-content bg-base-100 rounded-box z-[1] mt-3 w-96 p-2 shadow">
+              <li><a href="/for-dev">
+                <button
+                  className="font-medium flex items-center p-2"
+                  style={{ color: "black" }}
+                >
+                  For Developers
+                  {/* <ChevronDownIcon className="w-5 h-5 ml-1" /> */}
+                </button>
               </a></li>
               <li>
-        <details>
-        <summary><a href="/publish-api">
-              <button
-                className="font-medium flex items-center p-2"
-                style={{color: "black" }}
-              >
-                 Publish Your API
-              </button>
-              </a></summary>
-              </details></li>
+                <details>
+                  <summary><a href="/publish-api">
+                    <button
+                      className="font-medium flex items-center p-2"
+                      style={{ color: "black" }}
+                    >
+                      Publish Your API
+                    </button>
+                  </a></summary>
+                </details></li>
               <li>
-        <details>
-        <summary><a href="/signup-form">
-              <button
-                className="font-medium flex items-center p-2"
-                style={{color: "black" }}
-              >
-                 Community
-               
-              </button>
-              </a></summary>
-              </details>
+                <details>
+                  <summary><a href="/signup-form">
+                    <button
+                      className="font-medium flex items-center p-2"
+                      style={{ color: "black" }}
+                    >
+                      Community
+
+                    </button>
+                  </a></summary>
+                </details>
               </li>
 
               <li>
-        <details>
-        <summary><a href="/">
-              <button
-                className="font-medium flex items-center p-2"
-                style={{color: "black" }}
-              >
-                 Company
-                
-              </button>
-              </a></summary>
-              </details></li>
+                <details>
+                  <summary><a href="/">
+                    <button
+                      className="font-medium flex items-center p-2"
+                      style={{ color: "black" }}
+                    >
+                      Company
+
+                    </button>
+                  </a></summary>
+                </details></li>
 
               <li>
-        <details>
-        <summary><a href="/docs">
-              <button
-                className="font-medium flex items-center p-2"
-                style={{color: "black" }}
-              >
-                 Docs
-                
-              </button>
-              </a></summary>
-              </details>
+                <details>
+                  <summary><a href="/docs">
+                    <button
+                      className="font-medium flex items-center p-2"
+                      style={{ color: "black" }}
+                    >
+                      Docs
+
+                    </button>
+                  </a></summary>
+                </details>
               </li>
               <div className="mt-4 flex items-center gap-2 ml-5 text-green-500">
-            
-              <i className="fa-brands fa-twitter text-base pl-8 text-green-500" />
-           
-              <i className="fa-brands fa-facebook text-base pl-8 text-green-500" />
-            
-              <i className="fa-brands fa-instagram text-base pl-8 text-green-500" />
-            
+
+                <i className="fa-brands fa-twitter text-base pl-8 text-green-500" />
+
+                <i className="fa-brands fa-facebook text-base pl-8 text-green-500" />
+
+                <i className="fa-brands fa-instagram text-base pl-8 text-green-500" />
+
+              </div>
+            </ul>
+
           </div>
-        </ul>
-        
-      </div>
-      <a className="btn btn-ghost text-xl ml-5" href="/">
-          <span className="text-4xl mr-2" style={{ color: "#00FF99" }}>
-            m
-          </span>{" "}
-          morlabs
+          <a className="btn btn-ghost text-xl ml-5" href="/">
+            <span className="text-4xl mr-2" style={{ color: "#00FF99" }}>
+              m
+            </span>{" "}
+            morlabs
           </a>
-    </div>
-    <div className="navbar-center hidden lg:flex ">
-      <ul className="menu menu-horizontal px-1">
-        <li>
-        <details>
-        <summary>
-              <button
-                className="font-medium flex items-center"
-                style={{color: "white" }}
-              >
-                For Developers
-              
-              </button>
-        {/*
+        </div>
+        <div className="navbar-center hidden lg:flex ">
+          <ul className="menu menu-horizontal px-1">
+            <li>
+              <details>
+                <summary>
+                  <button
+                    className="font-medium flex items-center"
+                    style={{ color: "white" }}
+                  >
+                    For Developers
+
+                  </button>
+                  {/*
 
         What's summary and details for?
         its the dropdown
@@ -161,78 +161,74 @@ const Navbar = () => {
         Okay, I wanted a situation whereby even if the user clicks on the for devs button, it still brings the dropdown.
         that is the link you remove, so putting it down there is what you want 
         */}
-              </summary>
-              <ul className="p-2 bg-black text-white">
-              <li><a href="/for-dev">Web2-to-Web3</a></li>
-            <li><a href="/for-dev">Payment</a></li>
-            <li><a href="/for-dev">DeFi</a></li>
-            <li><a href="/for-dev">Gaming</a></li>
+                </summary>
+                <ul className="p-2 bg-black text-white">
+                  <li><a href="/for-dev">Web2-to-Web3</a></li>
+                  <li><a href="/for-dev">Payment</a></li>
+                  <li><a href="/for-dev">DeFi</a></li>
+                  <li><a href="/for-dev">Gaming</a></li>
+                </ul>
+              </details></li>
+
+            <li>
+              <details>
+                <summary><a href="/publish-api">
+                  <button
+                    className="font-medium flex items-center"
+                    style={{ color: "white" }}
+                  >
+                    Publish Your API
+                  </button>
+                </a></summary>
+              </details></li>
+            <li>
+              <details>
+                <summary><a href="/signup-form">
+                  <button
+                    className="font-medium flex items-center"
+                    style={{ color: "white" }}
+                  >
+                    Community
+
+                  </button>
+                </a></summary>
+              </details>
+            </li>
+
+            <li>
+              <details>
+                <summary><a href="/">
+                  <button
+                    className="font-medium flex items-center"
+                    style={{ color: "white" }}
+                  >
+                    Company
+
+                  </button>
+                </a></summary>
+              </details></li>
+
+            <li>
+              <details>
+                <summary><a href="/docs">
+                  <button
+                    className="font-medium flex items-center"
+                    style={{ color: "white" }}
+                  >
+                    Docs
+
+                  </button>
+                </a></summary>
+              </details>
+            </li>
           </ul>
-              </details></li>
-      
-        <li>
-        <details>
-        <summary><a href="/publish-api">
-              <button
-                className="font-medium flex items-center"
-                style={{color: "white" }}
-              >
-                 Publish Your API
-              </button>
-              </a></summary>
-              </details></li>
-              <li>
-        <details>
-        <summary><a href="/signup-form">
-              <button
-                className="font-medium flex items-center"
-                style={{color: "white" }}
-              >
-                 Community
-               
-              </button>
-              </a></summary>
-              </details>
-              </li>
 
-              <li>
-        <details>
-        <summary><a href="/">
-              <button
-                className="font-medium flex items-center"
-                style={{color: "white" }}
-              >
-                 Company
-                
-              </button>
-              </a></summary>
-              </details></li>
-
-              <li>
-        <details>
-        <summary><a href="/docs">
-              <button
-                className="font-medium flex items-center"
-                style={{color: "white" }}
-              >
-                 Docs
-                
-              </button>
-              </a></summary>
-              </details>
-              </li>
-      </ul>
-      <div className="hidden gap-2 lg:flex lg:items-center ml-12">
-      <a href="https://twitter.com/morlabs_"><i className="fa-brands fa-twitter text-2xl not-italic opacity-75 pr-5" /></a>
-      <i className="fa-brands fa-linkedin text-2xl not-italic opacity-75 pr-5"></i>
-      <i className="fa-brands fa-github text-2xl not-italic opacity-75"></i>
+        </div>
+        <div className="navbar-end">
+          <a className="btn text-sm btn-outline text-white" >Connect wallet</a>
+        </div>
       </div>
     </div>
-    <div className="navbar-end">
-      <a className="btn text-sm" >Connect wallet</a>
-    </div>
-  </div>
-  </div> 
   );
 };
 

@@ -145,13 +145,13 @@ function Hero() {
       <header className="grid !min-h-[49rem] px-8">
         <div className="container mx-auto mt-32 grid h-full w-full grid-cols-1 place-items-center lg:mt-14">
           <div className="col-span-1">
-            Replace line 149 - 167 with this:
+
 
             <h1 className="text-5xl font-bold mb-4 text-white">
               Your Gateway to Seamless <br />
               Web3 Integration
             </h1>
-            <p className="text-lg mb-8 text-white">
+            <p className="text-xl font-semibold mb-8 text-white">
               Accelerate Your Web3 Journey: <br />Explore, Build, and Scale With Our API Directory
             </p>
 
@@ -160,7 +160,7 @@ function Hero() {
               <Link href="/signup-form" passHref>
                 <button
                   type="submit"
-                  className="p-2 border-t border-l border-r border-white bg-gree-500 text-white rounded hover:bg-green-900"
+                  className="p-2 border border-white bg-gree-500 text-white rounded hover:bg-green-900"
                 >
                   {/* className="px-6 py-3 bg-green-800 rounded-full hover:bg-green-600 transition duration-300 text-white"style={{ backgroundColor: "#00FF99" }} */}
                   JoinWaitlist
@@ -168,7 +168,7 @@ function Hero() {
               </Link>
 
             </div>
-            <p className="mt-6 text-sm">Trusted by 100+ B2B companies</p>
+            <p className="mt-6 text-md py-5 font-semibold">Trusted by 100+ B2B companies</p>
             <TrustedCompanies />
           </div>
 

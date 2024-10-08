@@ -12,22 +12,22 @@ import Testimonials from "./testimonials";
 // import Faqs from "./faqs";
 
 // export default function Campaign() {
-  export default function Home() {
+export default function Home() {
   return (
     <>
-    <div className="bg-[radial-gradient(circle_at_top,_#4ade80,_black_60%)] min-h-screen">
+      <div className="bg-[radial-gradient(circle_at_top,_#4ade80,_black_60%)] min-h-screen">
         <Navbar />
         <Hero />
       </div>
       <div className="bg-gradient-to-b from-black to-black min-h-screen">
-        <Feature />
+        {/* <Feature /> */}
         <APISection />
         <VideoIntro />
         <Testimonials />
         <Footer />
         <FixedPlugin />
       </div>
-      
+
     </>
   );
 }
