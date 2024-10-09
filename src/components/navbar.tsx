@@ -41,7 +41,7 @@ const Navbar = () => {
   }
 
   return (
-    <div className=" w-full flex container top-0 z-50 border-0">
+    <div className=" w-full max-w-full flex container fixed top-0 z-50 border-0">
       <div className="navbar text-white items-center" style={{ background: 'radial-gradient(circle, #4ade80, black)' }}>
         <div className="navbar-start">
           <div className="dropdown">
@@ -150,15 +150,7 @@ const Navbar = () => {
                     For Developers
 
                   </button>
-                  {/*
-
-        What's summary and details for?
-        its the dropdown
-        continue
-
-        Okay, I wanted a situation whereby even if the user clicks on the for devs button, it still brings the dropdown.
-        that is the link you remove, so putting it down there is what you want 
-        */}
+                  
                 </summary>
                 <ul className="p-2 bg-black text-white">
                   <li><a href="/for-dev">Web2-to-Web3</a></li>
@@ -231,30 +223,3 @@ const Navbar = () => {
 };
 
 export default Navbar;
-
-
-/*
-Just add the list in the dropdown as normal list items, then when the user clicks on the, it'll take them to the UI that is the same with the dashboard.
- Do you have anything I can draw on??
- i understend with u mean. i guess just clicking the dev botton should take one to the dev page. this...hold on
- you get?
-
- I do, however a list like this one on the daisyUI site. Then inside that list, we would have DeFi, Gaming, payments and web2-to-web3. When the user clicks on any of the options, it will then take them to the page that looks like the dashboard. Then that's where you'd have the grid of all the API's and then SDKs.
-
- So all the Api's would be arranged like that. But depending on where I clicked o. If the user clicks on Payments, it would thake them to the payments page with all the API's, then he can switch tabs like in the demo video between API and SDK
-
- You get??
- okay. its time we are considering, so ones the site is live, i can add that later. right?
-
- No wahala. Just add the list in the navbar, only for Developers section, then let's fix up the rest of the project first to stop giving that material UI issue
-
- let do this stop giving that material UI issue first
-
- No wahala. Let me start generating the code for the rest of the components. I'm using AI to convert the code
-Make I no stress you my boss. You don try abeg. 
-abeg stress me today is the deadline. if we no submit our work is in vain.
-
-No wahala boss
-
-Make I generate the rest of the code. okay
- */

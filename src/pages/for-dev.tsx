@@ -47,7 +47,7 @@ const ForDev = () => {
     <>
     <div className=" flex justify-center bg-black">
     <Navbar />
-    <div className="bg-[_black_60%)] min-h-screen p-6 mt-20 border border-black rounded-t-[26px] w-[1150px]">
+    <div className="bg-gradient-to-b from-[#1b3a3a] to-[#001f19] min-h-screen p-6 mt-20 border border-black rounded-t-[26px] w-[1150px]">
         {/* Search Bar */}
         <div className="flex justify-center mb-4">
         <div className="flex items-center bg-[#0d1f26] rounded-full px-4 py-2 border border-transparent focus-within:border-gray-600 w-96">
@@ -69,23 +69,15 @@ const ForDev = () => {
         <div className="flex space-x-4 mb-4">
         <button
             className={`px-4 py-2 rounded-lg ${
-              activeSubTab === 'Web2-to-Web3' ? 'bg-gray-600 text-white' : 'bg-[#141414] text-gray-300'
+              activeSubTab === 'Web2-to-Web3' ? 'bg-green-500 text-white' : 'bg-gradient-to-b from-[#1b3a3a] to-[#001f19] text-gray-300'
             }`}
-            onClick={() => handleSubTabClick('Payments')}
+            onClick={() => handleSubTabClick('Web2-to-Web3')}
           >
             Web2-to-Web3
           </button>
           <button
             className={`px-4 py-2 rounded-lg ${
-              activeSubTab === 'Payments' ? 'bg-gray-600 text-white' : 'bg-[#141414] text-gray-300'
-            }`}
-            onClick={() => handleSubTabClick('Payments')}
-          >
-            Payments
-          </button>
-          <button
-            className={`px-4 py-2 rounded-lg ${
-              activeSubTab === 'DeFi' ? 'bg-gray-600 text-white' : 'bg-[#141414] text-gray-300'
+              activeSubTab === 'DeFi' ? 'bg-green-500 text-white' : 'bg-gradient-to-b from-[#1b3a3a] to-[#001f19] text-gray-300'
             }`}
             onClick={() => handleSubTabClick('DeFi')}
           >
@@ -93,18 +85,26 @@ const ForDev = () => {
           </button>
           <button
             className={`px-4 py-2 rounded-lg ${
-              activeSubTab === 'Games' ? 'bg-gray-600 text-white' : 'bg-[#141414] text-gray-300'
+              activeSubTab === 'Games' ? 'bg-green-500 text-white' : 'bg-gradient-to-b from-[#1b3a3a] to-[#001f19] text-gray-300'
             }`}
             onClick={() => handleSubTabClick('Games')}
           >
             Games
           </button>
+          <button
+            className={`px-4 py-2 rounded-lg ${
+              activeSubTab === 'Payments' ? 'bg-green-500 text-white' : 'bg-gradient-to-b from-[#1b3a3a] to-[#001f19] text-gray-300'
+            }`}
+            onClick={() => handleSubTabClick('Payments')}
+          >
+            Payments
+          </button>
           </div>
 
           {/* Recency Dropdown */}
         <div className="flex items-center space-x-2 flex-grow justify-center">
-          <span className="text-gray-400 bg-[#141414] px-4 text-semibold">Recency:</span>
-          <select className="bg-[#0d1f26] text-gray-400 rounded-lg py-1 px-2">
+          <span className="text-gray-400 bg-gradient-to-b from-[#1b3a3a] to-[#001f19] px-4 text-semibold">Recency:</span>
+          <select className="bg-gradient-to-b from-[#1b3a3a] to-[#001f19] text-gray-400 rounded-lg py-1 px-2">
             <option>All</option>
             {/* Add more options here */}
           </select>
@@ -113,7 +113,7 @@ const ForDev = () => {
         {/* Blockchain Dropdown */}
         <div className="flex items-center space-x-2">
           <span className="text-gray-400">Blockchain:</span>
-          <select className="bg-[#0d1f26] text-gray-400 rounded-lg py-1 px-2">
+          <select className="bg-gradient-to-b from-[#1b3a3a] to-[#001f19] text-gray-400 rounded-lg py-1 px-2">
             <option> Solana</option>
             {/* Add more options here */}
           </select>
@@ -130,7 +130,7 @@ const ForDev = () => {
       <div className="flex space-x-4">
         <button
           className={`px-4 py-2 text-lg rounded-lg ${
-            activeTab === 'API' ? 'bg-green-400 text-black' : 'bg-[#141414] text-gray-300'
+            activeTab === 'API' ? 'bg-green-400 text-black' : 'bg-gradient-to-b from-[#1b3a3a] to-[#001f19] text-gray-300'
           }`}
           onClick={() => handleTabClick('API')}
         >
@@ -138,7 +138,7 @@ const ForDev = () => {
         </button>
         <button
           className={`px-4 py-2 text-lg rounded-lg ${
-            activeTab === 'SDKs' ? 'bg-green-400 text-black' : 'bg-[#141414] text-gray-300'
+            activeTab === 'SDKs' ? 'bg-green-400 text-black' : 'bg-gradient-to-b from-[#1b3a3a] to-[#001f19] text-gray-300'
           }`}
           onClick={() => handleTabClick('SDKs')}
         >
@@ -146,7 +146,7 @@ const ForDev = () => {
         </button>
         <button
           className={`px-4 py-2 text-lg rounded-lg ${
-            activeTab === 'Chains' ? 'bg-green-400 text-black' : 'bg-[#141414] text-gray-300'
+            activeTab === 'Chains' ? 'bg-green-400 text-black' : 'bg-gradient-to-b from-[#1b3a3a] to-[#001f19] text-gray-300'
           }`}
           onClick={() => handleTabClick('Chains')}
         >
@@ -154,7 +154,7 @@ const ForDev = () => {
         </button>
         <button
           className={`px-4 py-2 text-lg rounded-lg ${
-            activeTab === 'Tools' ? 'bg-green-400 text-black' : 'bg-[#141414] text-gray-300'
+            activeTab === 'Tools' ? 'bg-green-400 text-black' : 'bg-gradient-to-b from-[#1b3a3a] to-[#001f19] text-gray-300'
           }`}
           onClick={() => handleTabClick('Tools')}
         >
@@ -162,6 +162,26 @@ const ForDev = () => {
         </button>
         </div>
         </div>
+
+      {/* Sub-Categories under Web2-Web3 */}
+      {activeSubTab === 'Web2-to-Web3' && (
+        <div className="h-[400px] gap-4 mb-6 bg-gradient-to-b from-[#1b3a3a] to-[#001f19] rounded-[26px] w-[500px]">
+          <button
+            className= "p-6 rounded-lg"
+            //   ${
+            //   activePaymentContent === 'CryptoPaymentGateways' ? 'ring-4 ring-green-400' : ''
+            // }`}
+            // onClick={() => handlePaymentContentClick('CryptoPaymentGateways')}
+          >
+            <h3 className="text-lg font-semibold text-white">Quickstart for Web2-to-Web3</h3>
+            <p className="text-gray-400 font-semibold">This comprehensive guide aims to bridge the gap between the two worlds, providing a detailed roadmap for developers to successfully navigate the intricacies of Web3 development.</p>
+          </button>
+          <a href="/web2-to-web3"><button className="px-4 py-2 text-lg rounded-lg bg-green-500 mt-6 ml-6">
+            Read More
+          </button>
+          </a>
+          </div>
+      )}
 
       {/* Sub-Categories under Payments */}
       {activeSubTab === 'Payments' && (
