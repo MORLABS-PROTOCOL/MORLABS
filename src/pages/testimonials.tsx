@@ -40,9 +40,9 @@ export function Testimonials() {
       </div>
 
       {/* Testimonials container */}
-      <div className="flex justify-center space-x-8">
+      <div className="md:flex items-center justify-center">
         {/* First testimonial */}
-        <div className="bg-[#141414] rounded-xl p-8 w-[300px]">
+        <div className="bg-[#141414] rounded-xl p-8 max-w-[350px] w-full">
           <p className="text-sm text-gray-400">
             &quot;Thanks to Morlabs, I was able to significantly accelerate the development of our new NFT marketplace on Solana.&quot;
           </p>
@@ -51,7 +51,7 @@ export function Testimonials() {
         </div>
 
         {/* Highlighted testimonial */}
-        <div className="bg-gradient-to-br from-green-500  via-green-300 to-teal-200 text-black p-8 rounded-xl w-[350px] max-w-md mx-auto">
+        <div className="bg-gradient-to-br from-green-500  via-green-300 to-teal-200 text-black p-8 rounded-xl max-w-[350px] w-full mx-auto">
           {/* className="bg-gradient-to-b from-teal-400 to-green-500 text-black rounded-xl p-8 w-[350px]"> */}
           <h3 className="text-xl font-bold mb-4">Morlabs has been a game-changer!</h3>
           <p className="text-sm mb-6">
@@ -76,7 +76,7 @@ export function Testimonials() {
         </div>
 
         {/* Third testimonial */}
-        <div className="bg-[#141414] rounded-xl p-8 w-[300px]">
+        <div className="bg-[#141414] rounded-xl p-8 max-w-[350px] w-full">
           <p className="text-sm text-gray-400">
             &quot;Morlabs has been a fantastic addition to my workflow. The API documentation is clear and concise, making it easy to understand and implement.&quot;
           </p>
