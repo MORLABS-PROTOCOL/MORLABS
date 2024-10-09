@@ -21,7 +21,7 @@ app.post("/waitlist", async (req, res) => {
 
     }
     if (!email || !username) {
-        res.status(400).send({ message: "Some details are missing, Kindly ensure both email and username are available" })
+        res.send({ ok: false, message: "Some details are missing, Kindly ensure both email and username are available" })
         return
     }
 
@@ -123,7 +123,7 @@ app.get("/payments/api", (req, res) => {
     }
     )
 })
-app.listen(3000, {
+app.listen(3002, {
     cors: {
         origin: "*"
     }
