@@ -47,46 +47,10 @@ const ForDev = () => {
     <>
     <div className=" flex justify-center bg-black">
     <Navbar />
-    <div className="bg-[radial-gradient(circle_at_top,_#4ade80,_black_60%)] min-h-screen p-6 mt-20 border border-black rounded-t-[26px] w-[1150px]">
-      {/* Main Tabs */}
-      <div className="flex mb-6 items-center justify-between w-full">
-      <div className="flex space-x-4">
-        <button
-          className={`px-6 py-2 text-lg rounded-lg ${
-            activeTab === 'API' ? 'bg-green-400 text-black' : 'bg-[#141414] text-gray-300'
-          }`}
-          onClick={() => handleTabClick('API')}
-        >
-          APIs
-        </button>
-        <button
-          className={`px-6 py-2 text-lg rounded-lg ${
-            activeTab === 'Chains' ? 'bg-green-400 text-black' : 'bg-[#141414] text-gray-300'
-          }`}
-          onClick={() => handleTabClick('Chains')}
-        >
-          Chains
-        </button>
-        <button
-          className={`px-6 py-2 text-lg rounded-lg ${
-            activeTab === 'SDKs' ? 'bg-green-400 text-black' : 'bg-[#141414] text-gray-300'
-          }`}
-          onClick={() => handleTabClick('SDKs')}
-        >
-          SDKs
-        </button>
-        <button
-          className={`px-6 py-2 text-lg rounded-lg ${
-            activeTab === 'Tools' ? 'bg-green-400 text-black' : 'bg-[#141414] text-gray-300'
-          }`}
-          onClick={() => handleTabClick('Tools')}
-        >
-          Tools
-        </button>
-        </div>
+    <div className="bg-[_black_60%)] min-h-screen p-6 mt-20 border border-black rounded-t-[26px] w-[1150px]">
         {/* Search Bar */}
-        <div className="flex-grow"></div>
-        <div className="flex items-center bg-[#0d1f26] rounded-full px-4 py-2 border border-transparent focus-within:border-gray-600">
+        <div className="flex justify-center mb-4">
+        <div className="flex items-center bg-[#0d1f26] rounded-full px-4 py-2 border border-transparent focus-within:border-gray-600 w-96">
     <span className="text-white">
       <i className="fas fa-search"></i> {/* Font Awesome search icon */}
     </span>
@@ -96,12 +60,21 @@ const ForDev = () => {
       className="bg-[#0d1f26] ml-2 text-sm text-white outline-none placeholder-white"
     />
   </div>
-      </div>
+  </div>
+     
 
       {/* Sub-Tabs for APIs */}
       {activeTab === 'API' && (
         <div className="flex items-center justify-between w-full">
         <div className="flex space-x-4 mb-4">
+        <button
+            className={`px-4 py-2 rounded-lg ${
+              activeSubTab === 'Web2-to-Web3' ? 'bg-gray-600 text-white' : 'bg-[#141414] text-gray-300'
+            }`}
+            onClick={() => handleSubTabClick('Payments')}
+          >
+            Web2-to-Web3
+          </button>
           <button
             className={`px-4 py-2 rounded-lg ${
               activeSubTab === 'Payments' ? 'bg-gray-600 text-white' : 'bg-[#141414] text-gray-300'
@@ -151,11 +124,50 @@ const ForDev = () => {
       {/* Horizontal Rule */}
       <hr className="border-white mx-8 mb-6" />
 
+       {/* Main Tabs */}
+
+      <div className="flex mb-6 items-center justify-between w-full">
+      <div className="flex space-x-4">
+        <button
+          className={`px-4 py-2 text-lg rounded-lg ${
+            activeTab === 'API' ? 'bg-green-400 text-black' : 'bg-[#141414] text-gray-300'
+          }`}
+          onClick={() => handleTabClick('API')}
+        >
+          APIs
+        </button>
+        <button
+          className={`px-4 py-2 text-lg rounded-lg ${
+            activeTab === 'SDKs' ? 'bg-green-400 text-black' : 'bg-[#141414] text-gray-300'
+          }`}
+          onClick={() => handleTabClick('SDKs')}
+        >
+          SDKs
+        </button>
+        <button
+          className={`px-4 py-2 text-lg rounded-lg ${
+            activeTab === 'Chains' ? 'bg-green-400 text-black' : 'bg-[#141414] text-gray-300'
+          }`}
+          onClick={() => handleTabClick('Chains')}
+        >
+          Chains
+        </button>
+        <button
+          className={`px-4 py-2 text-lg rounded-lg ${
+            activeTab === 'Tools' ? 'bg-green-400 text-black' : 'bg-[#141414] text-gray-300'
+          }`}
+          onClick={() => handleTabClick('Tools')}
+        >
+          Tools
+        </button>
+        </div>
+        </div>
+
       {/* Sub-Categories under Payments */}
       {activeSubTab === 'Payments' && (
-        <div className="grid grid-cols-2 gap-4 mb-6">
+        <div className="grid grid-cols-2 gap-4 mb-6 bg-gradient-to-b from-[#1b3a3a] to-[#001f19]">
           <button
-            className={`p-4 bg-[#141414] rounded-lg ${
+            className={`p-8 rounded-lg ${
               activePaymentContent === 'CryptoPaymentGateways' ? 'ring-4 ring-green-400' : ''
             }`}
             onClick={() => handlePaymentContentClick('CryptoPaymentGateways')}
@@ -164,7 +176,7 @@ const ForDev = () => {
             <p className="text-gray-400 text-sm">APIs for accepting cryptocurrencies.</p>
           </button>
           <button
-            className={`p-4 bg-[#141414] rounded-lg ${
+            className={`p-8 rounded-lg ${
               activePaymentContent === 'WalletIntegrations' ? 'ring-4 ring-green-400' : ''
             }`}
             onClick={() => handlePaymentContentClick('WalletIntegrations')}
@@ -173,7 +185,7 @@ const ForDev = () => {
             <p className="text-gray-400 text-sm">SDKs for connecting with Web3 wallets.</p>
           </button>
           <button
-            className={`p-4 bg-[#141414] rounded-lg ${
+            className={`p-8 rounded-lg ${
               activePaymentContent === 'StablecoinTransactions' ? 'ring-4 ring-green-400' : ''
             }`}
             onClick={() => handlePaymentContentClick('StablecoinTransactions')}
@@ -182,7 +194,7 @@ const ForDev = () => {
             <p className="text-gray-400 text-sm">SDKs for connecting with Web3 wallets.</p>
           </button>
           <button
-            className={`p-4 bg-[#141414] rounded-lg ${
+            className={`p-8 rounded-lg ${
               activePaymentContent === 'CrossBorderPayments' ? 'ring-4 ring-green-400' : ''
             }`}
             onClick={() => handlePaymentContentClick('CrossBorderPayments')}
@@ -191,7 +203,7 @@ const ForDev = () => {
             <p className="text-gray-400 text-sm">Tools for handling international crypto payments.</p>
           </button>
           <button
-            className={`p-4 bg-[#141414] rounded-lg ${
+            className={`p-8 rounded-lg ${
               activePaymentContent === 'Micropayments' ? 'ring-4 ring-green-400' : ''
             }`}
             onClick={() => handlePaymentContentClick('Micropayments')}
@@ -200,7 +212,7 @@ const ForDev = () => {
             <p className="text-gray-400 text-sm">APIs for tipping, micropayments, and pay-per-use models.</p>
           </button>
           <button
-            className={`p-4 bg-[#141414] rounded-lg ${
+            className={`p-8 rounded-lg ${
               activePaymentContent === 'EscrowServices' ? 'ring-4 ring-green-400' : ''
             }`}
             onClick={() => handlePaymentContentClick('EscrowServices')}

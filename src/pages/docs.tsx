@@ -2,6 +2,7 @@ import React from 'react';
 import { useState } from 'react';
 // import "../styles/globals.css";
 import { FixedPlugin } from '@/components';
+import { FaArrowLeft } from 'react-icons/fa';
 // import Navbar from "../components/navbar";
 
 const guide: React.FC = () => {
@@ -15,8 +16,13 @@ const guide: React.FC = () => {
           </span>{" "}<a href="#" className="text-xl font-bold text-black">morlabs</a>
         </div>
 
+        <div className="flex items-center mb-4">
+          <FaArrowLeft className="text-lg text-gray-600" />
+          <span className="ml-2 text-sm text-gray-600 font-semibold cursor-pointer">Home</span>
+          </div>
+
         <div className="mb-4">
-          <a href="#" className="block text-xl font-bold text-green-700">Morlabs Packages</a>
+          <a href="#" className="block text-xl font-bold text-black">Morlabs Packages</a>
         </div>
         <ul className="p-4 space-y-4">
           <li>
@@ -76,6 +82,9 @@ const guide: React.FC = () => {
   const Maincontent = () => {
     return (
       <div className="flex-1 p-8 overflow-y-auto h-screen">
+        <p className="text-sm text-gray-500 mb-1 pb-4">
+                <span className="text-gray-700 font-medium">Morlabs Packages</span> /
+              </p>
         <section id="Quick" className="mb-12">
           <h2 className="text-2xl font-bold mb-4">Quickstart for Morlabs Packages</h2>
           <h3 className="text-xl mb-2">Publish to Morlabs Packages</h3>
