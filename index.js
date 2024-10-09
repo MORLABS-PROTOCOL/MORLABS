@@ -10,6 +10,7 @@ app.use(cors({
     origin: ['http://localhost:3000', 'https://morlabsprotocol.vercel.app'],
 
 }))
+app.options('*', cors());
 app.get("/", (req, res) => {
     res.send({ message: "Welcome to the root route!", status: 200 });
 })
