@@ -87,9 +87,9 @@ const ForDev = () => {
             className={`px-4 py-2 rounded-lg ${
               activeSubTab === 'Games' ? 'bg-green-500 text-white' : 'bg-gradient-to-b from-[#1b3a3a] to-[#001f19] text-gray-300'
             }`}
-            onClick={() => handleSubTabClick('Games')}
+            onClick={() => handleSubTabClick('Gaming')}
           >
-            Games
+            Gaming
           </button>
           <button
             className={`px-4 py-2 rounded-lg ${
@@ -182,6 +182,74 @@ const ForDev = () => {
           </a>
           </div>
       )}
+
+
+      {/* Sub-Categories under DeFi */}
+      {activeSubTab === 'DeFi' && (
+        <div className="grid grid-cols-2 gap-4 mb-6 bg-gradient-to-b from-[#1b3a3a] to-[#001f19]">
+          <button
+            className={`p-8 rounded-lg ${
+              activePaymentContent === 'Solana RPC API' ? 'ring-4 ring-green-400' : ''
+            }`}
+            onClick={() => handlePaymentContentClick('Solana RPC API')}
+          >
+            <h3 className="text-lg font-semibold text-white">Solana RPC API</h3>
+            <p className="text-gray-400 text-sm">Core API for interacting with the Solana blockchain, allowing developers to access various features such as transaction submissions, account information, and program interactions.</p>
+          </button>
+          <button
+            className={`p-8 rounded-lg ${
+              activePaymentContent === 'Serum API' ? 'ring-4 ring-green-400' : ''
+            }`}
+            onClick={() => handlePaymentContentClick('Serum API')}
+          >
+            <h3 className="text-lg font-semibold text-white">Serum API</h3>
+            <p className="text-gray-400 text-sm">Provides access to Serum’s decentralized exchange, enabling on-chain order book trading, token swaps, and market data retrieval.</p>
+          </button>
+          <button
+            className={`p-8 rounded-lg ${
+              activePaymentContent === 'Orca API' ? 'ring-4 ring-green-400' : ''
+            }`}
+            onClick={() => handlePaymentContentClick('Orca API')}
+          >
+            <h3 className="text-lg font-semibold text-white">Orca API</h3>
+            <p className="text-gray-400 text-sm">Orca provides a user-friendly interface for token swaps, liquidity pools, and farming on Solana.</p>
+          </button>
+          </div>
+      )}
+
+      {/* Sub-Categories under Gaming */}
+      {activeSubTab === 'Gaming' && (
+        <div className="grid grid-cols-2 gap-4 mb-6 bg-gradient-to-b from-[#1b3a3a] to-[#001f19]">
+          <button
+            className={`p-8 rounded-lg ${
+              activePaymentContent === 'Metaplex API' ? 'ring-4 ring-green-400' : ''
+            }`}
+            onClick={() => handlePaymentContentClick('Metaplex API')}
+          >
+            <h3 className="text-lg font-semibold text-white">Metaplex API</h3>
+            <p className="text-gray-400 text-sm">Metaplex allows developers to create and manage NFTs on Solana, making it ideal for games that involve collectible assets and in-game items.</p>
+          </button>
+          <button
+            className={`p-8 rounded-lg ${
+              activePaymentContent === 'Solarians API' ? 'ring-4 ring-green-400' : ''
+            }`}
+            onClick={() => handlePaymentContentClick('Solarians API')}
+          >
+            <h3 className="text-lg font-semibold text-white">Solarians API</h3>
+            <p className="text-gray-400 text-sm">Provides resources for integrating unique NFT collectibles in gaming, allowing players to buy, sell, and trade in-game assets.</p>
+          </button>
+          <button
+            className={`p-8 rounded-lg ${
+              activePaymentContent === 'Solana GameFi API' ? 'ring-4 ring-green-400' : ''
+            }`}
+            onClick={() => handlePaymentContentClick('Solana GameFi API')}
+          >
+            <h3 className="text-lg font-semibold text-white">Solana GameFi API</h3>
+            <p className="text-gray-400 text-sm">Focused on GameFi applications, this API provides tools and resources for integrating financial elements into games, such as staking, lending, and yield farming.</p>
+          </button>
+          </div>
+      )}
+
 
       {/* Sub-Categories under Payments */}
       {activeSubTab === 'Payments' && (
