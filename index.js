@@ -10,13 +10,21 @@ app.get("/", (req, res) => {
     res.send({ message: "Welcome to the root route!", status: 200 });
 })
 
-app.post("/waitlist", (req, res) => {
+app.post("/waitlist", async (req, res) => {
 
     let { email, username } = req.body
+    let data = await getDocs(collection(db, "user-waitlist"))
+    let info = data.docs.map((i) => i.data());
+    let emails = info.map((i) => i.email)
+    if (emails.includes(email)) {
+        res.status(400).send({ message: "Email already exists" })
+
+    }
     if (!email || !username) {
         res.status(400).send({ message: "Some details are missing, Kindly ensure both email and username are available" })
         return
     }
+
     try {
         addDoc(collection(db, "user-waitlist"), {
             email, username
@@ -40,6 +48,7 @@ app.get("/waitlist", async (req, res) => {
     let data = await getDocs(collection(db, "user-waitlist"))
     // console.log(data)
     let info = data.docs.map((i) => i.data());
+
     // console.log(email)
     res.send(info)
 })
