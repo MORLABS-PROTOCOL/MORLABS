@@ -22,7 +22,7 @@ app.post("/waitlist", async (req, res) => {
     let info = data.docs.map((i) => i.data());
     let emails = info.map((i) => i.email)
     if (emails.includes(email)) {
-        return res.status(400).send({ message: "Email already exists" })
+        return res.send({ ok: false, message: "Email already exists" })
 
     }
     if (!email || !username) {
@@ -40,8 +40,8 @@ app.post("/waitlist", async (req, res) => {
         })
     }
     catch (e) {
-        return res.status(400).send({
-            message: `Error saving user: ${e}`,
+        return res.send({
+            message: `Error saving user`,
             ok: false
         })
     }
