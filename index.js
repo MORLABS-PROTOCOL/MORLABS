@@ -5,7 +5,9 @@ const app = express();
 
 app.use(express.json())
 app.use(express.urlencoded({ extended: true }))
-
+app.use(cors({
+    origin: "*"
+}))
 app.get("/", (req, res) => {
     res.send({ message: "Welcome to the root route!", status: 200 });
 })
@@ -123,8 +125,4 @@ app.get("/payments/api", (req, res) => {
     }
     )
 })
-app.listen(3002, {
-    cors: {
-        origin: "*"
-    }
-})
+app.listen(3002)
