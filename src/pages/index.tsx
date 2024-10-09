@@ -24,7 +24,7 @@ export default function Home() {
   ];
   return (
     <>
-      <div className="bg-[radial-gradient(circle_at_top,_#4ade80,_black_60%)] min-h-screen">
+      <div className="bg-[radial-gradient(circle_at_top,_#4ade80,_black_60%)] w-screen overflow-hidden min-h-screen">
         <Navbar />
         <Hero />
       </div>
@@ -76,7 +76,7 @@ export default function Home() {
         <VideoIntro />
         <Testimonials />
         <Footer />
-        <FixedPlugin />
+        {/* <FixedPlugin /> */}
       </div>
 
     </>

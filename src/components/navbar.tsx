@@ -40,9 +40,9 @@ const Navbar = () => {
   }
 
   return (
-    <div className="max-w-[1500px] w-full px-5 flex justify-center items-center container mx-auto fixed top-0 z-50 border-0">
+    <div className=" w-full flex container top-0 z-50 border-0">
       <div className="navbar  text-white items-center" style={{ background: 'radial-gradient(circle, #4ade80, black)' }}>
-        <div className="navbar-start ml-auto">
+        <div className="navbar-start">
           <div className="dropdown">
             <div tabIndex={0} role="button" className="btn btn-ghost lg:hidden">
               <svg
@@ -225,7 +225,7 @@ const Navbar = () => {
 
         </div>
         <div className="navbar-end">
-          <a className="btn text-sm btn-outline text-white" >Connect wallet</a>
+          <a className="btn btn-outline text-white" >Connect wallet</a>
         </div>
       </div>
     </div>
