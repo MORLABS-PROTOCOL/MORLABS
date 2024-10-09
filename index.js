@@ -1,6 +1,7 @@
 import express from "express";
 import { db } from "./fbconfig.js";
 import { addDoc, collection, doc, getDocs, setDoc } from "firebase/firestore";
+import cors from 'cors'
 const app = express();
 
 app.use(express.json())
