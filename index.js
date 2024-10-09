@@ -20,25 +20,25 @@ app.post("/waitlist", async (req, res) => {
     let info = data.docs.map((i) => i.data());
     let emails = info.map((i) => i.email)
     if (emails.includes(email)) {
-        res.status(400).send({ message: "Email already exists" })
+        return res.status(400).send({ message: "Email already exists" })
 
     }
     if (!email || !username) {
-        res.send({ ok: false, message: "Some details are missing, Kindly ensure both email and username are available" })
-        return
+        return res.send({ ok: false, message: "Some details are missing, Kindly ensure both email and username are available" })
+
     }
 
     try {
         addDoc(collection(db, "user-waitlist"), {
             email, username
         })
-        res.send({
+        return res.send({
             message: "Done !",
             email, username, ok: true
         })
     }
     catch (e) {
-        res.status(400).send({
+        return res.status(400).send({
             message: `Error saving user: ${e}`,
             ok: false
         })
