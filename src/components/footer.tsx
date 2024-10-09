@@ -1,5 +1,6 @@
 import React from 'react';
 import { Donegal_One } from 'next/font/google';
+import Image from "next/image"
 
 const aS = ['Explore APIs', 'Documentation', 'About Us', 'Contact Us', 'Careers'];
 const CURRENT_YEAR = new Date().getFullYear();
@@ -12,10 +13,7 @@ const Footer = () => {
           {/* Left Side - Logo */}
           <div className="flex items-center space-x-2 p-3 md:p-1">
             <a href="#">
-              <span className="text-4xl mr-2 font-bold text-green-500">
-                m
-              </span>
-              <span className="text-xl">morlabs</span>
+              <Image alt="morlabs_logo" width={150} height={50} src="/logos/morlabs-logo.svg" />
             </a>
           </div>
 
@@ -29,7 +27,7 @@ const Footer = () => {
                 <li>Payments</li>
                 <li>DeFi</li>
                 <li>Gaming</li>
-                
+
               </ul>
             </div>
             {/* Column 2 */}
@@ -84,13 +82,13 @@ const Footer = () => {
       </div>
       <div className="mt-16 flex flex-col items-center justify-center gap-y-4 gap-x-8 border-t border-white py-7">
         <div className="text-center text-white font-normal opacity-75">
-            <p className=" text-white">&copy; Copyright Morlabs {CURRENT_YEAR}</p>
-          
-        
-            <p className="text-white"><a href="" className='hover:underline'>Terms of Service</a> & <a href="" className='hover:underline'>Privacy Policy</a></p>
-            
-            
-         
+          <p className=" text-white">&copy; Copyright Morlabs {CURRENT_YEAR}</p>
+
+
+          <p className="text-white"><a href="" className='hover:underline'>Terms of Service</a> & <a href="" className='hover:underline'>Privacy Policy</a></p>
+
+
+
         </div>
       </div>
     </footer>

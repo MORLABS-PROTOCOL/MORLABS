@@ -5,7 +5,7 @@ import Image from 'next/image';
 import React, { useState } from 'react';
 import ConnectWalletModal from './connect-wallet'; // Import the modal
 import { FixedPlugin } from "@/components";
-
+import axios from 'axios';
 
 // const SignUpForm: React.FC = () => {
 //   const [step, setStep] = useState(1);
@@ -54,26 +54,41 @@ const SignUpForm: React.FC = () => {
   const [error, setError] = useState('');
   const [successMessage, setSuccessMessage] = useState('');
 
+
   const openModal = () => setModalOpen(true);
   const closeModal = () => setModalOpen(false);
 
-  const handleNextStep = async (e: any) => {
+  const handleNextStep = async () => {
     if (step === 1) {
-      if (name && email.includes('@')) {
-        e.preventDefault()
-        let res = await fetch("https://morlabsprotocol-backend.vercel.app/waitlist", {
-          method: "POST",
-          body: JSON.stringify({ email, username: name })
+
+      let apiurl = process.env.NODE_ENV === "development" ? 'http://localhost:3002/waitlist' : 'https://morlabsprotocol-backend.vercel.app/waitlist'
+      try {
+        let res = await axios.post(apiurl, {
+          email, username: name
+        }, {
+          headers: {
+            'Content-Type': "application/json"
+          }
         })
-        let data = await res.json()
-        if (data.ok) {
-          console.log(data)
-          setStep(2);
-          setIsButtonActive(false); // Reset button for next step
-        } else {
-          alert(data.message)
+
+
+        console.log(res)
+        if (res.data.ok) {
+          alert(`${res.data.message} You've Joined The Waitlist. You will now be redirected to connect wallet`)
+          location.href = "/connect-wallet"
         }
+      } catch (e) {
+        alert("An Error Occured")
       }
+      // let data = res
+      // if (data.ok) {
+      //   console.log(data)
+      //   setStep(2);
+      //   setIsButtonActive(false); // Reset button for next step
+      // } else {
+      //   alert(data.message)
+      // }
+
     } else if (step === 2) {
       if (password && password === confirmPassword) {
         // await handleSubmit(); // Call the API when user reaches the last step
@@ -173,7 +188,7 @@ const SignUpForm: React.FC = () => {
         {step === 1 && (
           <>
             <form
-              // onSubmit={handleSubmit} 
+              // onSubmit={handleSubmit}
               className="space-y-4">
               <input
                 type="text"
@@ -202,7 +217,8 @@ const SignUpForm: React.FC = () => {
                   }`}
                 disabled={!isButtonActive}
                 onClick={async (e) => {
-                  await handleNextStep(e)
+                  e.preventDefault()
+                  await handleNextStep()
                 }}
               >
                 Continue

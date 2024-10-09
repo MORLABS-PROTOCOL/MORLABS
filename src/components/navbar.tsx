@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import Link from "next/link";
+import Image from "next/image"
 
 
 // Define navItems here, or import them if they are defined in another file.
@@ -41,7 +42,7 @@ const Navbar = () => {
 
   return (
     <div className=" w-full flex container top-0 z-50 border-0">
-      <div className="navbar  text-white items-center" style={{ background: 'radial-gradient(circle, #4ade80, black)' }}>
+      <div className="navbar text-white items-center" style={{ background: 'radial-gradient(circle, #4ade80, black)' }}>
         <div className="navbar-start">
           <div className="dropdown">
             <div tabIndex={0} role="button" className="btn btn-ghost lg:hidden">
@@ -134,10 +135,7 @@ const Navbar = () => {
 
           </div>
           <a className="btn btn-ghost text-xl ml-5" href="/">
-            <span className="text-4xl mr-2" style={{ color: "#00FF99" }}>
-              m
-            </span>{" "}
-            morlabs
+            <Image alt="morlabs_logo" width={150} height={50} src="/logos/morlabs-logo.svg" />
           </a>
         </div>
         <div className="navbar-center hidden lg:flex ">

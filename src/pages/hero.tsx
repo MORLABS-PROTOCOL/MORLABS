@@ -160,10 +160,10 @@ function Hero() {
               <Link href="/signup-form" passHref>
                 <button
                   type="submit"
-                  className="p-2 border border-white bg-gree-500 text-white rounded hover:bg-green-900"
+                  className="p-2 border border-white bg-gree-500 font-semibold text-white rounded hover:bg-green-900"
                 >
                   {/* className="px-6 py-3 bg-green-800 rounded-full hover:bg-green-600 transition duration-300 text-white"style={{ backgroundColor: "#00FF99" }} */}
-                  JoinWaitlist
+                  Join Waitlist
                 </button>
               </Link>
 
