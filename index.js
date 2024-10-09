@@ -7,7 +7,8 @@ const app = express();
 app.use(express.json())
 app.use(express.urlencoded({ extended: true }))
 app.use(cors({
-    origin: "*"
+    origin: ['http://localhost:3000', 'https://morlabsprotocol.vercel.app/'],
+
 }))
 app.get("/", (req, res) => {
     res.send({ message: "Welcome to the root route!", status: 200 });
