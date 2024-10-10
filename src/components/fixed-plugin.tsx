@@ -6,11 +6,11 @@ const FixedPlugin = () => {
   return (
     <a href="/" target="_blank">
       <button
-        className="btn btn-primary btn-sm fixed bottom-4 right-4 flex gap-1 pl-2 items-center border border-white bg-white text-black"
+        className="btn  hover:bg-green-900 hover:text-white btn-sm fixed bottom-4 right-4 flex gap-1 pl-2 items-center border border-white bg-white text-black"
       >
 
         <Image
-          width={128}
+          width={128} 
           height={128}
           className="w-5 h-5"
           alt="Morlabs"
