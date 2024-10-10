@@ -41,7 +41,7 @@ const Navbar = () => {
   }
 
   return (
-    <div className=" w-full max-w-full flex container fixed top-0 z-50 border-0">
+    <div className=" w-full flex container top-0 z-50 border-0 fixed">
       <div className="navbar text-white items-center" style={{ background: 'radial-gradient(circle, #4ade80, black)' }}>
         <div className="navbar-start">
           <div className="dropdown">
@@ -150,7 +150,6 @@ const Navbar = () => {
                     For Developers
 
                   </button>
-                  
                 </summary>
                 <ul className="p-2 bg-black text-white">
                   <li><a href="/for-dev">Web2-to-Web3</a></li>
