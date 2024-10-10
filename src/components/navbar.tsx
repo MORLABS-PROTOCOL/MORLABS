@@ -62,7 +62,7 @@ const Navbar = () => {
             <ul
               tabIndex={0}
               className="menu menu-sm dropdown-content bg-base-100 rounded-box z-[1] mt-3 w-96 p-2 shadow">
-              <li><a href="/for-dev">
+              <li><a href="#">
                 <button
                   className="font-medium flex items-center p-2"
                   style={{ color: "black" }}
@@ -152,10 +152,10 @@ const Navbar = () => {
                   </button>
                 </summary>
                 <ul className="p-2 bg-black text-white">
-                  <li><a href="/for-dev">Web2-to-Web3</a></li>
-                  <li><a href="/for-dev">Payment</a></li>
-                  <li><a href="/for-dev">DeFi</a></li>
-                  <li><a href="/for-dev">Gaming</a></li>
+                  <li><a href="#">Web2-to-Web3</a></li>
+                  <li><a href="#">Payment</a></li>
+                  <li><a href="#">DeFi</a></li>
+                  <li><a href="#">Gaming</a></li>
                 </ul>
               </details></li>
 
