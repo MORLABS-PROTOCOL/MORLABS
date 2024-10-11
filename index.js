@@ -48,15 +48,15 @@ app.post("/waitlist", async (req, res) => {
 
 })
 
-app.get("/waitlist", async (req, res) => {
+// app.get("/waitlist", async (req, res) => {
 
-    let data = await getDocs(collection(db, "user-waitlist"))
-    // console.log(data)
-    let info = data.docs.map((i) => i.data());
+//     let data = await getDocs(collection(db, "user-waitlist"))
+//     // console.log(data)
+//     let info = data.docs.map((i) => i.data());
 
-    // console.log(email)
-    res.send(info)
-})
+//     // console.log(email)
+//     res.send(info)
+// })
 
 app.get("/payments/api", (req, res) => {
     res.send({
