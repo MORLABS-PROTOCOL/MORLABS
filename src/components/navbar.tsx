@@ -31,7 +31,7 @@ function NavItem({ children, href }: NavItemProps) {
 
 const Navbar = () => {
   const [open, setOpen] = useState(false);
- 
+
   const handleToggle = () => {
     setOpen(prev => !prev)
   }
@@ -47,8 +47,8 @@ const Navbar = () => {
             <div className="dropdown flex justify-evenly w-[100vw] items-center lg:hidden">
 
 
-              <FaBarsStaggered style={{display: open ? 'none' : 'block'}} onClick={handleToggle} size={15} />
-              <GiCancel style={{display: open ? 'block' : 'none'}} onClick={handleToggle} size={17} />
+              <FaBarsStaggered style={{ display: open ? 'none' : 'block' }} onClick={handleToggle} size={15} />
+              <GiCancel style={{ display: open ? 'block' : 'none' }} onClick={handleToggle} size={17} />
 
               <Image alt="morlabs_logo" width={100} height={70} src="/logos/morlabs-logo.svg" />
               <button className="rounded-[30px] w-auto text-white text-[0.8rem] hover:border-gray-700 border-white border-[0.5px] py-3 px-4 lg:hidden hover:bg-gray-700">Connect wallet</button>
@@ -57,12 +57,10 @@ const Navbar = () => {
 
 
               <ul
-                className={`${
-                  open ? "max-h-96" : "max-h-0"
-                } overflow-hidden transition-all duration-500 transform ${
-                  open ? "translate-y-0 opacity-100" : "translate-y-full opacity-0"
-                } bg-white rounded-b-lg top-[7vh] absolute lg:hidden z-[1] mt-3 w-[100%] p-2 shadow py-3`}
-                >
+                className={`${open ? "max-h-96" : "max-h-0"
+                  } overflow-hidden transition-all duration-500 transform ${open ? "translate-y-0 opacity-100" : "translate-y-full opacity-0"
+                  } bg-white rounded-b-lg top-[7vh] absolute lg:hidden z-[1] mt-3 w-[100%] p-2 shadow py-3`}
+              >
                 <li><Link href="#">
                   <button
                     className="font-medium flex items-center p-2"
@@ -72,17 +70,6 @@ const Navbar = () => {
 
                   </button>
                 </Link></li>
-                <li>
-                  <details>
-                    <summary><Link href="/publish-api">
-                      <button
-                        className="font-medium flex items-center p-2"
-                        style={{ color: "black" }}
-                      >
-                        Publish Your API
-                      </button>
-                    </Link></summary>
-                  </details></li>
                 <li>
                   <details>
                     <summary><Link href="/signup-form">
@@ -154,74 +141,44 @@ const Navbar = () => {
             <ul className="menu menu-horizontal px-1">
               <li>
                 <details>
-                  <summary>
-                    <button
-                      className="font-medium flex items-center"
-                      style={{ color: "white" }}
-                    >
-                      For Developers
+                  <summary className="font-medium flex items-center"
+                    style={{ color: "white" }}>
+                    For Developers
 
-                    </button>
                   </summary>
                   <ul className="p-2 bg-black text-white">
                     <li><Link href="#">Web2-to-Web3</Link></li>
                     <li><Link href="#">Payment</Link></li>
                     <li><Link href="#">DeFi</Link></li>
                     <li><Link href="#">Gaming</Link></li>
+                    <li><Link href="#">Publish your API</Link></li>
                   </ul>
                 </details></li>
 
-              <li>
-                <details>
-                  <summary><Link href="/publish-api">
-                    <button
-                      className="font-medium flex items-center"
-                      style={{ color: "white" }}
-                    >
-                      Publish Your API
-                    </button>
-                  </Link></summary>
-                </details></li>
-              <li>
-                <details>
-                  <summary><Link href="/signup-form">
-                    <button
-                      className="font-medium flex items-center"
-                      style={{ color: "white" }}
-                    >
-                      Community
 
-                    </button>
-                  </Link></summary>
-                </details>
+              <li>
+                <Link href="/signup-form" className="font-medium flex items-center"
+                  style={{ color: "white" }}>
+
+                  Community
+
+
+                </Link>
+
               </li>
 
               <li>
-                <details>
-                  <summary><Link href="/">
-                    <button
-                      className="font-medium flex items-center"
-                      style={{ color: "white" }}
-                    >
-                      Company
+                <Link href="/signup-form" className="font-medium flex items-center"
+                  style={{ color: "white" }}>
 
-                    </button>
-                  </Link></summary>
-                </details></li>
+                  About Us
 
-              <li>
-                <details>
-                  <summary><Link href="/docs">
-                    <button
-                      className="font-medium flex items-center"
-                      style={{ color: "white" }}
-                    >
-                      Docs
 
-                    </button>
-                  </Link></summary>
-                </details>
+                </Link>
+
               </li>
+
+
             </ul>
 
           </div>
@@ -231,7 +188,7 @@ const Navbar = () => {
         </div>
         {/* END OF WEB RESPONSIVENESS */}
       </div>
-    </div>
+    </div >
   );
 };
 

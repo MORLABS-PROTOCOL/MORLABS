@@ -95,7 +95,7 @@ export const BenefitsCarousel = () => {
             <div className="flex flex-col items-center text-center">
               <FaRocket size={40} className="text-green-500 mb-4" />
               <h3 className="text-xl font-semibold mb-2">Fast SDK Integration</h3>
-              
+
               <p className="text-gray-400">Accelerate your development with ready-to-use SDK and pre-built modules for common Web3 functionalities.</p>
             </div>
           </SwiperSlide>
@@ -197,7 +197,7 @@ const FEATURES = [
 
 export function Features() {
   return (
-    <section className="pt-10 pb-2 px-4">
+    <section className="pt-10 pb-2 px-4 w-full overflow-hidden">
       <div className="container mx-auto mb-25 text-center">
         <h2 className="text-white mb-2 font-bold uppercase text-3xl">Your Developer Dashboard</h2>
         <h1 className="text-white mb-4 text-lg">
