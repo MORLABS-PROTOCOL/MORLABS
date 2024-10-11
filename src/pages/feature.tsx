@@ -1,5 +1,4 @@
 "use client";
-
 import React from "react";
 
 import {
@@ -38,11 +37,11 @@ const ApiProviders = () => {
 
 
       <div className="flex flex-col md:flex-row justify-center items-center gap-8">
-        <div className="flex flex-col items-center border border-gray-600 rounded-lg py-6 px-12">
+        <div className="flex flex-col items-center rounded-lg py-6 px-12">
           <span className="text-3xl font-bold text-green-400">1000+</span>
           <span className="text-lg text-gray-400">users per month</span>
         </div>
-        <div className="flex flex-col items-center bg-gradient-to-t from-purple-500 to-green-500 rounded-lg py-6 px-12 mb-12">
+        <div className="flex flex-col items-center bg-gradient-to-t from-purple-500 to-green-500 rounded-lg py-6 px-12">
           <span className="text-3xl font-bold text-white">92%</span>
           <span className="text-lg text-gray-200">
             of users are satisfied with the platform
@@ -96,6 +95,7 @@ export const BenefitsCarousel = () => {
             <div className="flex flex-col items-center text-center">
               <FaRocket size={40} className="text-green-500 mb-4" />
               <h3 className="text-xl font-semibold mb-2">Fast SDK Integration</h3>
+              
               <p className="text-gray-400">Accelerate your development with ready-to-use SDK and pre-built modules for common Web3 functionalities.</p>
             </div>
           </SwiperSlide>
@@ -197,13 +197,13 @@ const FEATURES = [
 
 export function Features() {
   return (
-    <section className="py-28 px-4">
+    <section className="pt-10 pb-2 px-4">
       <div className="container mx-auto mb-25 text-center">
         <h2 className="text-white mb-2 font-bold uppercase text-3xl">Your Developer Dashboard</h2>
         <h1 className="text-white mb-4 text-lg">
           Simplifying the integrations of APIs <br /> into Web3 Projects
         </h1>
-        <p className="text-white mx-auto w-full px-4 lg:w-11/12 lg:px-8 italic py-3">
+        <p className="text-white text-sm mx-auto w-full px-4 lg:w-11/12 lg:px-8 py-3">
           Manage Your APIs, SDKs, and Projects in One Place. View all your Web3 projects, track
           progress, and access your integrations...
         </p>

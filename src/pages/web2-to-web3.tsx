@@ -1,5 +1,5 @@
 import { FaArrowLeft, FaSearch, FaBook } from 'react-icons/fa';
-
+import Link from 'next/link';
 
 export default function Web2ToWeb3() {
   return (
@@ -16,8 +16,8 @@ export default function Web2ToWeb3() {
         </div>
 
           <div className="flex items-center space-x-2">
-           <a href="/dic-assistant"> <button className="border p-2 rounded-md"><FaBook className="text-gray-500 text-2xl" /></button>
-           </a>
+           <Link href="/dic-assistant"> <button className="border p-2 rounded-md"><FaBook className="text-gray-500 text-2xl" /></button>
+           </Link>
           </div>
         </div>
 
@@ -38,10 +38,10 @@ export default function Web2ToWeb3() {
           <p className="text-lg font-semibold">Web2-to-Web3</p>
           </li>
               <li className="mb-2">
-              <a href="#" className="flex items-center text-gray-800 font-semibold">
+              <Link href="#" className="flex items-center text-gray-800 font-semibold">
                     <div className="w-1 h-4 bg-green-500 mr-2"></div>
                     Web2-to-Web3
-                  </a>
+                  </Link>
                 
               </li>
             </ul>
@@ -78,11 +78,11 @@ export default function Web2ToWeb3() {
         <aside className="w-1/4 bg-white p-4 shadow">
           <h3 className="text-xl font-semibold mb-4">In this article</h3>
           <ul className="list-none">
-            <li className="mb-2"><a href="#" className="text-indigo-600">Introduction</a></li>
-            <li className="mb-2"><a href="#" className="text-indigo-600">Understanding Web3</a></li>
-            <li className="mb-2"><a href="#" className="text-indigo-600">Essential Tools</a></li>
-            <li className="mb-2"><a href="#" className="text-indigo-600">Monetization Strategies</a></li>
-            <li className="mb-2"><a href="#" className="text-indigo-600">Conclusion</a></li>
+            <li className="mb-2"><Link href="#" className="text-indigo-600">Introduction</Link></li>
+            <li className="mb-2"><Link href="#" className="text-indigo-600">Understanding Web3</Link></li>
+            <li className="mb-2"><Link href="#" className="text-indigo-600">Essential Tools</Link></li>
+            <li className="mb-2"><Link href="#" className="text-indigo-600">Monetization Strategies</Link></li>
+            <li className="mb-2"><Link href="#" className="text-indigo-600">Conclusion</Link></li>
           </ul>
         </aside>
       </div>

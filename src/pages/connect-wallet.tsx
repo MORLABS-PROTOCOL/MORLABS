@@ -2,6 +2,7 @@
 import { useState } from 'react';
 // import "../styles/globals.css";
 import Image from 'next/image';
+import Link from 'next/link';
 
 import { FaWallet } from 'react-icons/fa'; // General wallet icon
 import { SiMetabase, SiCoinbase, SiTrustpilot } from 'react-icons/si'; // Specific wallet icons
@@ -94,7 +95,7 @@ export default function ConnectWalletModal({ closeModal }: ModalProps) {
             <div className="w-1/3">
             <div className="flex items-center space-x-2">
                 <FaWallet className="text-white text-2xl" />
-                <a href="#" className="text-white text-2xl">Connect a Wallet</a>
+                <Link href="#" className="text-white text-2xl">Connect a Wallet</Link>
             </div>
 
               <h2 className="text-gray-400 mb-4">Popular</h2>

@@ -11,7 +11,7 @@ import { FaCircle } from 'react-icons/fa';
 import { FaPaperPlane, FaBtc, FaHandshake, FaShieldAlt } from 'react-icons/fa';
 import { SiChainlink } from 'react-icons/si';
 
-
+import Link from 'next/link';
 import { Footer } from '@/components';
 import Navbar from "../components/navbar";
 import { FixedPlugin } from "@/components";
@@ -176,10 +176,10 @@ const ForDev = () => {
             <h3 className="text-lg font-semibold text-white">Quickstart for Web2-to-Web3</h3>
             <p className="text-gray-400 font-semibold">This comprehensive guide aims to bridge the gap between the two worlds, providing a detailed roadmap for developers to successfully navigate the intricacies of Web3 development.</p>
           </button>
-          <a href="/web2-to-web3"><button className="px-4 py-2 text-lg rounded-lg bg-green-500 mt-6 ml-6">
+          <Link href="/web2-to-web3"><button className="px-4 py-2 text-lg rounded-lg bg-green-500 mt-6 ml-6">
             Read More
           </button>
-          </a>
+          </Link>
           </div>
       )}
 

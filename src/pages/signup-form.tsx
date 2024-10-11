@@ -6,6 +6,7 @@ import React, { useState } from 'react';
 import ConnectWalletModal from './connect-wallet'; // Import the modal
 import { FixedPlugin } from "@/components";
 import axios from 'axios';
+import Link from 'next/link';
 
 // const SignUpForm: React.FC = () => {
 //   const [step, setStep] = useState(1);
@@ -157,7 +158,7 @@ const SignUpForm: React.FC = () => {
         <div className="justify-center m-3 text-center">
           <span className="text-4xl" style={{ color: "#00FF99" }}>
             m
-          </span>{" "}<a href="#" className="text-xl font-bold text-black">morlabs</a>
+          </span>{" "}<Link href="#" className="text-xl font-bold text-black">morlabs</Link>
 
         </div>
 
@@ -344,13 +345,13 @@ const SignUpForm: React.FC = () => {
 
         <p className="text-gray-500 text-sm mt-6 text-center">
           By clicking &quot;continue&quot; you agree to our{' '}
-          <a href="#" className="text-green-500">
+          <Link href="#" className="text-green-500">
             Privacy Policy
-          </a>{' '}
+          </Link>{' '}
           and{' '}
-          <a href="#" className="text-green-500">
+          <Link href="#" className="text-green-500">
             Terms of Use
-          </a>
+          </Link>
         </p>
 
       </div>

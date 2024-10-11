@@ -19,7 +19,7 @@ const APIPage: React.FC = () => {
     <>
       <Navbar />
 
-      <div className="flex flex-col items-center justify-center text-center text-white h-screen bg-[radial-gradient(circle_at_top,_#4ade80,_black_60%)] min-h-screen">
+      <div className="flex flex-col items-center justify-center text-center text-white h-screen bg-[radial-gradient(circle_at_top,_#195B41,_black_50%)] min-h-screen">
         <header className="grid !min-h-[49rem] px-8">
           <div className="container mx-auto mt-32 grid h-full w-full grid-cols-1 place-items-center lg:mt-14">
             <div className="col-span-1">

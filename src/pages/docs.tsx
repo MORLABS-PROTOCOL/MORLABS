@@ -4,6 +4,7 @@ import { useState } from 'react';
 import { FixedPlugin } from '@/components';
 import { FaArrowLeft } from 'react-icons/fa';
 // import Navbar from "../components/navbar";
+import Link from 'next/link';
 
 const guide: React.FC = () => {
 
@@ -13,7 +14,7 @@ const guide: React.FC = () => {
         <div className="mb-3">
           <span className="text-4xl" style={{ color: "#00FF99" }}>
             m
-          </span>{" "}<a href="#" className="text-xl font-bold text-black">morlabs</a>
+          </span>{" "}<Link href="#" className="text-xl font-bold text-black">morlabs</Link>
         </div>
 
         <div className="flex items-center mb-4">
@@ -22,40 +23,40 @@ const guide: React.FC = () => {
           </div>
 
         <div className="mb-4">
-          <a href="#" className="block text-xl font-bold text-black">Morlabs Packages</a>
+          <Link href="#" className="block text-xl font-bold text-black">Morlabs Packages</Link>
         </div>
         <ul className="p-4 space-y-4">
           <li>
-            <a href="#Quick" className="block text-sm text-gray-700 hover:text-green-600">Quickstart</a>
+            <Link href="#Quick" className="block text-sm text-gray-700 hover:text-green-600">Quickstart</Link>
           </li>
           <li>
-            <a href="#learn" className="block text-sm text-gray-700 hover:text-green-600">Learn Morlabs Packages</a>
+            <Link href="#learn" className="block text-sm text-gray-700 hover:text-green-600">Learn Morlabs Packages</Link>
           </li>
           <li>
-            <a href="#Quick" className="block text-sm text-gray-700 hover:text-green-600">Working with a Morlabs Packages registry</a>
+            <Link href="#Quick" className="block text-sm text-gray-700 hover:text-green-600">Working with a Morlabs Packages registry</Link>
           </li>
           <li>
-            <a href="Quick" className="block text-sm text-gray-700 hover:text-green-600">Managing Morlabs packages with workflows</a>
+            <Link href="Quick" className="block text-sm text-gray-700 hover:text-green-600">Managing Morlabs packages with workflows</Link>
           </li>
           <li>
-            <a href="#morlabs" className="block text-sm text-gray-700 hover:text-green-600">
+            <Link href="#morlabs" className="block text-sm text-gray-700 hover:text-green-600">
               Morlabs API
-            </a>
+            </Link>
           </li>
           <li>
-            <a href="#api-doc-template" className="block text-sm text-gray-700 hover:text-green-600">
+            <Link href="#api-doc-template" className="block text-sm text-gray-700 hover:text-green-600">
               API Documentation Templates
-            </a>
+            </Link>
           </li>
           <li>
-            <a href="#solana" className="block text-sm text-gray-700 hover:text-green-600">
+            <Link href="#solana" className="block text-sm text-gray-700 hover:text-green-600">
               Solana Integration
-            </a>
+            </Link>
           </li>
           <li>
-            <a href="#sandbox" className="block text-sm text-gray-700 hover:text-green-600">
+            <Link href="#sandbox" className="block text-sm text-gray-700 hover:text-green-600">
               Sandbox/Test Environment
-            </a>
+            </Link>
           </li>
         </ul>
       </nav>
@@ -179,12 +180,12 @@ const guide: React.FC = () => {
             You can use our test environment to try out API requests.
           </p>
 
-          <a
+          <Link
             href="/sandbox"
             className="inline-block bg-green-800 text-white py-2 px-4 rounded hover:bg-green-500"
           >
             Access Sandbox Environment
-          </a>
+          </Link>
         </section>
       </div>
     );
