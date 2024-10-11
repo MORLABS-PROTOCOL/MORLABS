@@ -10,29 +10,30 @@ import Link from "next/link";
 
 export function VideoIntro() {
   return (
-    <div className="flex justify-center items-center py-10 bg-gradient-to-br from-green-900 via-green-300 to-teal-200 text-black rounded-[46px] max-w-5xl mx-auto p-8">
+    <div className="flex justify-center flex-col items-center">
+      <div className="flex justify-center flex-col items-center mx-5 py-20 bg-gradient-to-br from-green-900 via-green-500 to-teal-500 rounded-[46px] max-w-5xl p-8">
 
-      <div className="flex flex-col items-center justify-center py-10 mx-8 sm:mx-6 -mt-24 rounded-xl  p-5 md:p-14 shadow-md w-[768px] h-[450px]">
-        <h2 className="text-white mb-3 text-center">Get Started with Web3 Development in Minutes</h2>
-        <p className="text-white font-normal lg:w-5/14 m-4 text-center">
-          Join our developer community and start exploring our API directory and SDK library right away. Easily publish your own APIs and connect with other developers..
-        </p>
-        <div>
-          <Link href="/signup-form" passHref>
-            <button
-              type="submit"
-              className="p-2 border-t border-l border-r border-white bg-gree-500 text-white rounded hover:bg-green-900"
-            >
-              {/* className="px-6 py-3 bg-green-800 rounded-full hover:bg-green-600 transition duration-300 text-white"style={{ backgroundColor: "#00FF99" }} */}
-              JoinWaitlist
-            </button>
-          </Link>
+    
+<h1 className="text-white mb-3 text-center text-3xl font-bold w-[90%] lg:w-[50%]">Get Started with Web3 Development in Minutes</h1>
+<p className="text-white text-lg font-normal lg:w-5/14 m-4 text-center w-[90%] lg:w-[55%]">
+  Join our developer community and start exploring our API directory and SDK library right away. Easily publish your own APIs and connect with other developers..
+</p>
+<div>
+  <Link href="/signup-form" passHref>
+    <button
+      type="submit"
+      className="p-2 border-t border-[2px] border-r border-white bg-gree-500 text-white rounded hover:bg-green-600"
+    >
+     JoinWaitlist
+    </button>
+  </Link>
 
-          {/* <JoinWaitlist/> */}
-        </div>
+  {/* <JoinWaitlist/> */}
+</div>
 
-      </div>
+</div>
     </div>
+
 
 
   );

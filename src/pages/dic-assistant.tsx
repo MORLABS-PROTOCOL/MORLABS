@@ -1,14 +1,15 @@
 import React from 'react';
 import { RiSendPlaneFill } from 'react-icons/ri';
+import Link from 'next/link';
 
 const Web3Assistant = () => {
   return (
     <>
     <div className="flex justify-center mt-3">
-          {/* <img src="/image/morlab-logo.jpg" alt="Logo" className="h-16 w-16" /> */}
+          {/* <Image src="/image/morlab-logo.jpg" alt="Logo" className="h-16 w-16" /> */}
           <span className="text-4xl font-bold" style={{ color: "#00FF99" }}>
             m
-          </span>{" "}<a href="#" className="text-xl font-bold text-black">morlabs</a>
+          </span>{" "}<Link href="#" className="text-xl font-bold text-black">morlabs</Link>
         </div>
     <div className="flex justify-center items-center h-screen bg-base-200">
       <div className="card w-96 bg-base-100 shadow-xl relative">
