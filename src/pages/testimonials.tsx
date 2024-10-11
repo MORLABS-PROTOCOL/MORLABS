@@ -4,6 +4,7 @@ import React from "react";
 import { UserIcon } from "@heroicons/react/24/solid";
 import TestimonialCard from "../components/testimonial-card";
 import Image from "next/image";
+import { FiArrowLeftCircle, FiArrowRightCircle  } from "react-icons/fi";
 
 
 // const TESTIMONIALS = [
@@ -32,32 +33,40 @@ import Image from "next/image";
 
 export function Testimonials() {
   return (
-    <div className="bg-black text-white py-20">
+    <div className="bg-black px-5 text-white py-20">
       {/* Header */}
       <div className="text-center mb-12">
-        <h2 className="text-4xl font-bold">Why Devs Love Morlabs</h2>
-        <p className="text-lg text-gray-400">Over 100+ Developers use Morlabs for Web3 integration</p>
-      </div>
+        <h2 className="text-4xl font-bold mb-4">Why Devs Love Morlabs</h2>
+        <div className="flex justify-center items-center">
+        <p className="text-lg text-white w-[250px] text-center">Over 100+ Developers use Morlabs for Web3 integration</p>
+   
+        </div>
+         </div>
 
       {/* Testimonials container */}
-      <div className="md:flex items-center justify-center">
+      <div className="flex items-center gap-x-6 w-full flex-row mg:flex-row justify-center overflow-scroll">
         {/* First testimonial */}
-        <div className="bg-[#141414] rounded-xl p-8 max-w-[350px] w-full">
-          <p className="text-sm text-gray-400">
+        <div className="border border-teal-200 hidden md:flex flex-col justify-start items-start rounded-xl py-14 p-8 max-w-[350px] h-[300px] w-full">
+          <p className="text-md text-gray-400">
             &quot;Thanks to Morlabs, I was able to significantly accelerate the development of our new NFT marketplace on Solana.&quot;
           </p>
-          <p className="font-bold mt-4">- Faith Igwe</p>
+          <p className="font-bold mt-4 text-md">- Faith Igwe</p>
           <p className="text-sm text-gray-400">Project Manager</p>
         </div>
 
         {/* Highlighted testimonial */}
-        <div className="bg-gradient-to-br from-green-500  via-green-300 to-teal-200 text-black p-8 rounded-xl max-w-[350px] w-full mx-auto">
+        <div className="bg-gradient-to-br from-green-200  via-teal-200 to-white text-black p-8 rounded-3xl h-auto max-w-[550px] py-10 w-full mx-auto">
           {/* className="bg-gradient-to-b from-teal-400 to-green-500 text-black rounded-xl p-8 w-[350px]"> */}
-          <h3 className="text-xl font-bold mb-4">Morlabs has been a game-changer!</h3>
-          <p className="text-sm mb-6">
-            &quot;I&apos;ve been struggling to find high-quality APIs for my Solana-based NFT marketplace. Morlabs has been a game-changer! Their API directory is incredibly comprehensive, and the pre-built SDKs have saved me countless hours of development time.&quot;
+          <h3 className="text-2xl font-bold mb-4">Morlabs has been a game-changer!</h3>
+          <p className="mb-5 text-xl font-medium">
+            &quot;I&apos;ve been struggling to find high-quality APIs for my Solana-based NFT marketplace.
+            </p>
+            
+            <p className="mb-5 text-xl font-medium"> Morlabs has been a game-changer! </p> 
+              
+              <p className="mb-5 text-xl font-medium">Their API directory is incredibly comprehensive, and the pre-built SDKs have saved me countless hours of development time.&quot;
           </p>
-          <p className="text-sm mb-4">
+          <p className="mb-5 text-xl font-medium">
             &quot;The testing environment has also been invaluable for ensuring seamless integration.&quot;
           </p>
           <div className="flex items-center space-x-4">
@@ -70,13 +79,13 @@ export function Testimonials() {
             />
             <div>
               <p className="font-bold">Samuel Bassey</p>
-              <p className="text-sm text-black">Solana DApp Dev, CEO Kextraco</p>
+              <p className="text-md text-black">Solana DApp Dev, CEO Kextraco</p>
             </div>
           </div>
         </div>
 
         {/* Third testimonial */}
-        <div className="bg-[#141414] rounded-xl p-8 max-w-[350px] w-full">
+        <div className="border border-teal-200 h-[300px] hidden md:flex p-8 max-w-[350px] flex-col justify-start items-start rounded-xl py-14 w-full">
           <p className="text-sm text-gray-400">
             &quot;Morlabs has been a fantastic addition to my workflow. The API documentation is clear and concise, making it easy to understand and implement.&quot;
           </p>
@@ -87,12 +96,8 @@ export function Testimonials() {
 
       {/* Arrows for navigation */}
       <div className="flex justify-center mt-8 space-x-4">
-        <button className="rounded-full p-3 border-2 border-white text-white hover:bg-white hover:text-black transition-all duration-300 ease-in-out shadow-md hover:shadow-lg">
-          &larr;
-        </button>
-        <button className="rounded-full p-3 border-2 border-white text-white hover:bg-white hover:text-black transition-all duration-300 ease-in-out shadow-md hover:shadow-lg">
-          &rarr;
-        </button>
+       <FiArrowLeftCircle size={60} className="text-white" />
+        <FiArrowRightCircle size={60} className="text-white" />
       </div>
     </div>
   );

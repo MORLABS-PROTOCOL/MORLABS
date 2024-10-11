@@ -123,14 +123,16 @@ export const TrustedCompanies = () => {
 
   return (
     <section>
-      <div className="mx-auto sm:flex justify-center space-x-6">
+      <div className="mx-auto mb-24 md:mb-24 lg:mb-24 sm:flex md:flex-col md:gap-y-3 lg:flex-row justify-center gap-y-3 gap-x-7">
         {companies.map((company, index) => (
-          <div key={index} className="company-card flex flex-col items-center">
+          <div key={index} className="flex flex-col md:flex-col lg:flex-row justify-center items-center">
+            <div key={index} className="company-card flex flex-col lg:flex-row mt-6 items-center">
             <div className="company-icon text-5xl text-white w-[130px] h-[60px] flex items-center justify-center mb-2p-4 border border-green-500 rounded-lg hover:bg-green-400 transition-all">
               {company.icon}
-              <p className="company-name text-sm font-semibold">{company.name}</p>
+              <p className="company-name text-sm font-semibold ml-2">{company.name}</p>
             </div>
 
+          </div>
           </div>
         ))}
       </div>
@@ -147,7 +149,7 @@ function Hero() {
           <div className="col-span-1">
 
 
-            <h1 className="text-5xl font-bold mb-4 text-white">
+            <h1 className="text-4xl lg:text-6xl font-bold mb-4 mt-0 lg:mt-24 text-white">
               Your Gateway to Seamless <br />
               Web3 Integration
             </h1>

@@ -1,20 +1,21 @@
 import React from 'react';
 import { Donegal_One } from 'next/font/google';
 import Image from "next/image"
+import Link from 'next/link';
 
 const aS = ['Explore APIs', 'Documentation', 'About Us', 'Contact Us', 'Careers'];
 const CURRENT_YEAR = new Date().getFullYear();
 
 const Footer = () => {
   return (
-    <footer className="bg-black text-white py-8 border border-white rounded-t-[46px] max-w-6xl mx-auto px-6">
+    <footer className="bg-[#0C0D0C] flex flex-col justify-center text-white py-8 border border-white rounded-t-[46px] max-w-6xl mx-auto px-6">
       <div className="container mx-auto px-4">
         <div className="md:flex md:justify-between items-center">
           {/* Left Side - Logo */}
           <div className="flex items-center space-x-2 p-3 md:p-1">
-            <a href="#">
+            <Link href="#">
               <Image alt="morlabs_logo" width={150} height={50} src="/logos/morlabs-logo.svg" />
-            </a>
+            </Link>
           </div>
 
           {/* Center Content */}
@@ -52,40 +53,40 @@ const Footer = () => {
 
           {/* Right Side - Social Icons */}
           <div className="flex space-x-4 items-center">
-            <a href="https://twitter.com/morlabs_">
+            <Link href="https://twitter.com/morlabs_">
               <p className="text-white opacity-75 hover:opacity-100">
                 <i className="fa-brands fa-twitter text-2xl not-italic"></i>
               </p>
-            </a>
-            <a href="#">
+            </Link>
+            <Link href="#">
               <p className="text-white opacity-75 hover:opacity-100">
                 <i className="fa-brands fa-aedin text-2xl not-italic"></i>
               </p>
-            </a>
-            <a href="#">
+            </Link>
+            <Link href="#">
               <p className="text-white opacity-75 hover:opacity-100">
                 <i className="fa-brands fa-facebook text-2xl not-italic"></i>
               </p>
-            </a>
-            <a href="#">
+            </Link>
+            <Link href="#">
               <p className="text-white opacity-75 hover:opacity-100">
                 <i className="fa-brands fa-github text-2xl not-italic"></i>
               </p>
-            </a>
-            <a href="#">
+            </Link>
+            <Link href="#">
               <p className="text-white opacity-75 hover:opacity-100">
                 <i className="fa-brands fa-dribbble text-2xl not-italic"></i>
               </p>
-            </a>
+            </Link>
           </div>
         </div>
       </div>
       <div className="mt-16 flex flex-col items-center justify-center gap-y-4 gap-x-8 border-t border-white py-7">
         <div className="text-center text-white font-normal opacity-75">
-          <p className=" text-white">&copy; Copyright Morlabs {CURRENT_YEAR}</p>
+          <p className=" text-white text-sm">&copy; Copyright Morlabs {CURRENT_YEAR}</p>
 
 
-          <p className="text-white"><a href="" className='hover:underline'>Terms of Service</a> & <a href="" className='hover:underline'>Privacy Policy</a></p>
+          <p className="text-white text-sm"><Link href="" className='hover:underline'>Terms of Service</Link> & <Link href="" className='hover:underline'>Privacy Policy</Link></p>
 
 
 
